@@ -7,14 +7,14 @@ import TeamMemberCard from "@/components/team/team-member-card"
 
 // Define departments
 const departments = [
-  "Technical",
-  "Research",
-  "Events",
+  "Tech & IT",
+  "Event Management",
+  "Content & Documentation",
   "Marketing",
-  "Content",
-  "Public Relations",
-  "Finance",
-  "Operations",
+  "Research",
+  "Graphic Design",
+  "Digital Maketing",
+  "Sponsorship",
   "Design",
   "Editorial",
 ]

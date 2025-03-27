@@ -14,7 +14,7 @@ const departmentHeads = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Leads the research team in analyzing market trends and creating insightful reports for club members.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https://instagram.com",
   },
   {
     name: "Neha Kapoor",
@@ -22,7 +22,7 @@ const departmentHeads = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Organizes workshops, seminars, and competitions to enhance members' practical knowledge of finance.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https://instagram.com",
   },
   {
     name: "Arjun Reddy",
@@ -30,7 +30,7 @@ const departmentHeads = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Manages the club's brand image and promotes events to maximize student engagement and participation.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https://instagram.com",
   },
   {
     name: "Meera Joshi",
@@ -38,7 +38,7 @@ const departmentHeads = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Creates educational content on finance topics and manages the club's newsletter and social media.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https://instagram.com",
   },
   {
     name: "Rohan Sharma",
@@ -46,7 +46,7 @@ const departmentHeads = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Manages the club's technical infrastructure and develops tools for financial analysis and learning.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https://instagram.com",
   },
   {
     name: "Tanya Gupta",
@@ -54,7 +54,7 @@ const departmentHeads = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Builds and maintains relationships with industry professionals and other finance clubs.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https://instagram.com",
   },
 ]
 
@@ -118,7 +118,7 @@ export default function HeadsSection() {
                   image={head.image}
                   bio={head.bio}
                   linkedin={head.linkedin}
-                  instagram={head.instagram}
+                  //instagram={head.instagram}
                   delay={0.1 * index}
                 />
               </div>

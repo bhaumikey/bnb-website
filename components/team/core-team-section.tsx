@@ -11,7 +11,7 @@ const coreMembers = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Finance enthusiast with a passion for equity markets and a track record of organizing successful financial events.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https:////instagram.com",
   },
   {
     name: "Priya Patel",
@@ -19,7 +19,7 @@ const coreMembers = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Specializes in financial analysis and has interned with top investment banks. Leads the club's market research initiatives.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https:////instagram.com",
   },
   {
     name: "Rahul Mehta",
@@ -27,7 +27,7 @@ const coreMembers = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Skilled in event management and public relations. Ensures smooth coordination between different departments.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https:////instagram.com",
   },
   {
     name: "Ananya Singh",
@@ -35,7 +35,7 @@ const coreMembers = [
     image: "/placeholder.svg?height=400&width=400",
     bio: "Detail-oriented finance major with expertise in budgeting and financial planning for club activities.",
     linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    //instagram: "https:////instagram.com",
   },
 ]
 
@@ -69,7 +69,7 @@ export default function CoreTeamSection() {
               image={member.image}
               bio={member.bio}
               linkedin={member.linkedin}
-              instagram={member.instagram}
+              //instagram={member.//instagram}
               delay={0.1 * index}
             />
           ))}

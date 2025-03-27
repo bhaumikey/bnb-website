@@ -69,7 +69,7 @@ export default function CoreMembersSection() {
               image={member.image}
               bio={member.bio}
               linkedin={member.linkedin}
-              instagram={member.instagram}
+              //instagram={member.instagram}
               delay={0.1 * index}
             />
           ))}
