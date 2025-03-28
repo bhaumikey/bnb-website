@@ -26,14 +26,14 @@ export default function ContactHero() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 dark:bg-amber-900/30">
                   <Mail className="h-5 w-5 text-amber-600" />
                 </div>
-                <span className="text-foreground/80">bullsandbears@pdeu.ac.in</span>
+                <span className="text-foreground/80">pdpubnb@gmail.com</span>
               </div>
 
               <div className="flex items-center space-x-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 dark:bg-amber-900/30">
                   <Phone className="h-5 w-5 text-amber-600" />
                 </div>
-                <span className="text-foreground/80">+91 9876543210</span>
+                <span className="text-foreground/80">+91 9316170948</span>
               </div>
             </div>
           </motion.div>
