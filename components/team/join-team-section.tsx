@@ -58,14 +58,7 @@ export default function JoinTeamSection() {
               </motion.div>
             </div>
 
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                size="lg"
-                className="bg-amber-600 hover:bg-amber-700 transition-all duration-300 hover:shadow-lg hover:shadow-amber-600/20"
-              >
-                Apply to Join
-              </Button>
-            </motion.div>
+            
           </motion.div>
         </div>
       </div>
