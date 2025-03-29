@@ -13,104 +13,307 @@ const departments = [
   "Marketing",
   "Research",
   "Graphic Design",
-  "Digital Maketing",
+  "Digital Marketing",
   "Sponsorship",
-  "Design",
-  "Editorial",
 ]
 
 // Define subcommittee members for each department
 const subcommitteeMembers = {
-  Technical: [
+  "Tech & IT": [
     {
-      name: "Rahul Verma",
-      position: "Web Developer",
+      name: "Bhaumik Patel",
+      position: "Future-Ready Innovator",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Frontend specialist with expertise in React and Next.js. Maintains the club's website and digital platforms.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
-      name: "Priya Singh",
+      name: "Viral Vaghela",
       position: "App Developer",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Mobile app developer who created the Bulls & Bears trading simulation app for Android and iOS.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
-      name: "Aryan Patel",
+      name: "Nishu Shukla",
       position: "Database Administrator",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Manages the club's databases and ensures data security for all digital platforms and applications.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
-      name: "Neha Sharma",
+      name: "Aashvi Padhiyar",
       position: "UI/UX Designer",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Creates intuitive and engaging user interfaces for the club's digital products and marketing materials.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
-      name: "Vikram Mehta",
+      name: "Shoury Mishra",
       position: "Backend Developer",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Specializes in server-side programming and API development for the club's web applications.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
-    {
-      name: "Ananya Reddy",
-      position: "QA Tester",
-      image: "/placeholder.svg?height=400&width=400",
-      bio: "Ensures quality and functionality of all technical products before they are released to club members.",
-      linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    },
-    {
-      name: "Rohan Kapoor",
-      position: "Data Analyst",
-      image: "/placeholder.svg?height=400&width=400",
-      bio: "Analyzes user data and provides insights to improve the club's digital platforms and engagement.",
-      linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    },
-    {
-      name: "Tanya Malhotra",
-      position: "Cybersecurity Specialist",
-      image: "/placeholder.svg?height=400&width=400",
-      bio: "Implements security measures to protect the club's digital assets and member information.",
-      linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    },
-    {
-      name: "Karan Gupta",
-      position: "DevOps Engineer",
-      image: "/placeholder.svg?height=400&width=400",
-      bio: "Manages deployment pipelines and ensures smooth operation of the club's technical infrastructure.",
-      linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    },
-    {
-      name: "Meera Joshi",
-      position: "Technical Writer",
-      image: "/placeholder.svg?height=400&width=400",
-      bio: "Creates documentation and guides for the club's technical products and platforms.",
-      linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    },
+    
   ],
   Research: [
+    {
+      name: "Aayushi Shah",
+      position: "Equity Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    // Add 9 more members for Research department
+    {
+      name: "Smit Joshi",
+      position: "Fixed Income Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Anshul Bhatt",
+      position: "Macroeconomic Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Neil Gandhi",
+      position: "Cryptocurrency Researcher",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Darshil Shah",
+      position: "ESG Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+  ],
+  "Event Management":  [
+    {
+      name: "Chelshi Tank",
+      position: "Equity Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    // Add 9 more members for Research department
+    {
+      name: "Donna Kasundra",
+      position: "Fixed Income Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Suribhi Yadav",
+      position: "Macroeconomic Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Dhruvina Rathod",
+      position: "Cryptocurrency Researcher",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Pratham Mehta",
+      position: "ESG Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Pritesh Patel",
+      position: "Sector Specialist - Technology",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on technology sector analysis and investment opportunities in tech companies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Aaryan Amin",
+      position: "Sector Specialist - Finance",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes banking, insurance, and financial services companies for investment insights.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Hetvi Makadiya",
+      position: "Quantitative Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Applies mathematical and statistical methods to financial market analysis and trading strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Ved Patel",
+      position: "Technical Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in chart patterns and technical indicators to predict market movements.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Bhumi Shah",
+      position: "Research Coordinator",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Manages research projects and coordinates between different research teams within the department.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Shanay Vyas",
+      position: "Research Coordinator",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Manages research projects and coordinates between different research teams within the department.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+  ],
+  "Content & Documentation": [
+    {
+      name: "Anand Zanzmeriya",
+      position: "Equity Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    // Add 9 more members for Research department
+    {
+      name: "Muskan Goplani",
+      position: "Fixed Income Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Karan Boda Patel",
+      position: "Macroeconomic Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Daksh Mathur",
+      position: "Cryptocurrency Researcher",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Ishita Shah",
+      position: "ESG Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+  ],
+  Marketing: [
+    {
+      name: "Shaurya Khandelwal",
+      position: "Equity Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    // Add 9 more members for Research department
+    {
+      name: "Lakshya Baldaniya",
+      position: "Fixed Income Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Aditya Sevak",
+      position: "Macroeconomic Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Kalp Dhariwal",
+      position: "Cryptocurrency Researcher",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Pinal Samani",
+      position: "ESG Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Jhil Mandavia",
+      position: "Sector Specialist - Technology",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on technology sector analysis and investment opportunities in tech companies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Diya Patel",
+      position: "Sector Specialist - Finance",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes banking, insurance, and financial services companies for investment insights.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Aaditya Gupta",
+      position: "Quantitative Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Applies mathematical and statistical methods to financial market analysis and trading strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+  ],
+  "Graphic Design": [
     {
       name: "Aditya Kumar",
       position: "Equity Research Analyst",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     // Add 9 more members for Research department
     {
@@ -119,7 +322,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Raj Malhotra",
@@ -127,7 +330,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Anita Desai",
@@ -135,7 +338,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Vikrant Singh",
@@ -143,7 +346,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Priyanka Sharma",
@@ -151,7 +354,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Focuses on technology sector analysis and investment opportunities in tech companies.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Arjun Nair",
@@ -159,7 +362,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Analyzes banking, insurance, and financial services companies for investment insights.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Kavita Reddy",
@@ -167,7 +370,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Applies mathematical and statistical methods to financial market analysis and trading strategies.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Rahul Mehta",
@@ -175,7 +378,7 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Specializes in chart patterns and technical indicators to predict market movements.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
     {
       name: "Neha Gupta",
@@ -183,90 +386,176 @@ const subcommitteeMembers = {
       image: "/placeholder.svg?height=400&width=400",
       bio: "Manages research projects and coordinates between different research teams within the department.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
+      //instagram: "https:////instagram.com",
     },
   ],
-  // Add placeholder members for other departments
-  Events: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Events Member ${i + 1}`,
-      position: "Events Coordinator",
+  "Digital Marketing": [
+    {
+      name: "Aditya Kumar",
+      position: "Equity Research Analyst",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Helps organize and coordinate various events and activities for the club.",
+      bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  Marketing: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Marketing Member ${i + 1}`,
-      position: "Marketing Associate",
+      //instagram: "https:////instagram.com",
+    },
+    // Add 9 more members for Research department
+    {
+      name: "Sneha Patel",
+      position: "Fixed Income Analyst",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Works on promoting club activities and increasing student engagement.",
+      bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  Content: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Content Member ${i + 1}`,
-      position: "Content Creator",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Raj Malhotra",
+      position: "Macroeconomic Analyst",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Creates educational and promotional content for the club's platforms.",
+      bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  "Public Relations": Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `PR Member ${i + 1}`,
-      position: "PR Associate",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Anita Desai",
+      position: "Cryptocurrency Researcher",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Manages relationships with external organizations and promotes the club's image.",
+      bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  Finance: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Finance Member ${i + 1}`,
-      position: "Finance Associate",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Vikrant Singh",
+      position: "ESG Research Analyst",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Manages the club's budget and financial planning for events and activities.",
+      bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  Operations: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Operations Member ${i + 1}`,
-      position: "Operations Associate",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Priyanka Sharma",
+      position: "Sector Specialist - Technology",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Ensures smooth execution of club activities and manages day-to-day operations.",
+      bio: "Focuses on technology sector analysis and investment opportunities in tech companies.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  Design: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Design Member ${i + 1}`,
-      position: "Graphic Designer",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Arjun Nair",
+      position: "Sector Specialist - Finance",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Creates visual content and designs for the club's marketing materials and platforms.",
+      bio: "Analyzes banking, insurance, and financial services companies for investment insights.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
-  Editorial: Array(10)
-    .fill(0)
-    .map((_, i) => ({
-      name: `Editorial Member ${i + 1}`,
-      position: "Content Editor",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Kavita Reddy",
+      position: "Quantitative Analyst",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Edits and reviews content for the club's publications and digital platforms.",
+      bio: "Applies mathematical and statistical methods to financial market analysis and trading strategies.",
       linkedin: "https://linkedin.com",
-      instagram: "https://instagram.com",
-    })),
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Rahul Mehta",
+      position: "Technical Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in chart patterns and technical indicators to predict market movements.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Neha Gupta",
+      position: "Research Coordinator",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Manages research projects and coordinates between different research teams within the department.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+  ],
+  Sponsorship: [
+    {
+      name: "Aditya Kumar",
+      position: "Equity Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in analyzing equity markets and providing investment recommendations for club members.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    // Add 9 more members for Research department
+    {
+      name: "Sneha Patel",
+      position: "Fixed Income Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on bond markets and interest rate analysis to provide insights on debt securities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Raj Malhotra",
+      position: "Macroeconomic Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Studies global economic trends and their impact on financial markets and investment strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Anita Desai",
+      position: "Cryptocurrency Researcher",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes blockchain technologies and cryptocurrency markets to identify emerging trends and opportunities.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Vikrant Singh",
+      position: "ESG Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in environmental, social, and governance factors in investment analysis and decision-making.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Priyanka Sharma",
+      position: "Sector Specialist - Technology",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on technology sector analysis and investment opportunities in tech companies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Arjun Nair",
+      position: "Sector Specialist - Finance",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Analyzes banking, insurance, and financial services companies for investment insights.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Kavita Reddy",
+      position: "Quantitative Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Applies mathematical and statistical methods to financial market analysis and trading strategies.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Rahul Mehta",
+      position: "Technical Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in chart patterns and technical indicators to predict market movements.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+    {
+      name: "Neha Gupta",
+      position: "Research Coordinator",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Manages research projects and coordinates between different research teams within the department.",
+      linkedin: "https://linkedin.com",
+      //instagram: "https:////instagram.com",
+    },
+  ],
+  
 }
 
 export default function SubcommitteeSection() {
@@ -275,11 +564,11 @@ export default function SubcommitteeSection() {
     threshold: 0.1,
   })
 
-  const [selectedDepartment, setSelectedDepartment] = useState("Technical")
+  const [selectedDepartment, setSelectedDepartment] = useState("Tech & IT")
 
   // Set Technical department as default when component mounts
   useEffect(() => {
-    setSelectedDepartment("Technical")
+    setSelectedDepartment("Tech & IT")
   }, [])
 
   return (
@@ -345,7 +634,7 @@ export default function SubcommitteeSection() {
                     image={member.image}
                     bio={member.bio}
                     linkedin={member.linkedin}
-                    instagram={member.instagram}
+                    //instagram={member.instagram}
                     delay={0.1 * index}
                   />
                 </div>
