@@ -50,7 +50,7 @@ const departmentHeads = [
   },
   {
     name: "Dhruv Maradiya",
-    position: "Head of Public Relations",
+    position: "Head of Tech & IT",
     image: "/placeholder.svg?height=400&width=400",
     bio: "Innovation in fintech is revolutionizing how financial markets operate. He develops systems that enhance decision-making, using predictive analytics, automation, and smart algorithms. His work involves refining data processing, optimizing trading platforms, and ensuring that technological advancements lead to smarter, more informed investment strategies in an evolving financial landscape.",
     linkedin: "https://linkedin.com",
@@ -58,7 +58,7 @@ const departmentHeads = [
   },
   {
     name: "Arnav Dixit",
-    position: "Head of Public Relations",
+    position: "Head of Graphic Design",
     image: "/placeholder.svg?height=400&width=400",
     bio: "Financial concepts become powerful when visually represented with clarity. His designs simplify complex data, ensuring that trends, statistics, and analyses are easily understood. By merging creativity with financial knowledge, he creates compelling visual stories that make market insights engaging, accessible, and insightful for a broader audience.",
     linkedin: "https://linkedin.com",
@@ -66,7 +66,7 @@ const departmentHeads = [
   },
   {
     name: "Mohnish Pathak",
-    position: "Head of Public Relations",
+    position: "Head of Content & Documentation",
     image: "/placeholder.svg?height=400&width=400",
     bio: "Financial literacy thrives on storytelling. He translates market complexities into engaging content, making economics and investment strategies easier to grasp. His approach involves breaking down data-driven insights, explaining global financial trends, and using narrative techniques to captivate audiences while ensuring information remains accurate and insightful..",
     linkedin: "https://linkedin.com",
@@ -74,7 +74,7 @@ const departmentHeads = [
   },
   {
     name: "Raj Shah",
-    position: "Head of Public Relations",
+    position: "Head of Research",
     image: "/placeholder.svg?height=400&width=400",
     bio: "Data is the key to financial decision-making. He specializes in analyzing global economic trends, risk factors, and market patterns to make well-informed investment choices. His approach relies on statistical modeling, quantitative analysis, and deep research, ensuring that every financial move is backed by solid empirical evidence and critical thinking.",
     linkedin: "https://linkedin.com",
@@ -82,7 +82,7 @@ const departmentHeads = [
   },
   {
     name: "Deep Singhala",
-    position: "Head of Public Relations",
+    position: "Head of Sponsorships",
     image: "/placeholder.svg?height=400&width=400",
     bio: "Sponsorships are strategic investments, not just financial contributions. He builds valuable partnerships by aligning business interests with financial incentives. His expertise lies in structuring deals that provide mutual benefits, securing long-term collaborations that contribute to both market presence and economic stability for all parties involved.",
     //instagram: "https:////instagram.com",
