@@ -7,54 +7,96 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import MemberCard from "@/components/ui/member-card"
 
+import SrijanMishra from "@/public/B&B_Photos/Srijan Mishra.jpg";
+import YatriPatel from "@/public/B&B_Photos/Yatri Patel.jpg";
+import MohitGurnani from "@/public/B&B_Photos/Mohit Gurnani.jpg";
+import AryaShah from "@/public/B&B_Photos/Arya Shah.jpg";
+import DeepMathukiya from "@/public/B&B_Photos/Deep Mathukiya.jpg";
+//import DhruvMaradiya from "@/public/B&B_Photos/Dhruv Maradiya.jpg";
+//import ArnavDixit from "@/public/B&B_Photos/Arnav Dixit.jpg";
+import MohnishPathak from "@/public/B&B_Photos/Mohnish Pathak.jpg";
+import RajShah from "@/public/B&B_Photos/Raj Shah.jpg";
+//import DeepSinghala from "@/public/B&B_Photos/Deep Singhala.jpg";
+
 const departmentHeads = [
   {
-    name: "Vikram Desai",
-    position: "Head of Research",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Leads the research team in analyzing market trends and creating insightful reports for club members.",
-    linkedin: "https://linkedin.com",
-    //instagram: "https://instagram.com",
+    name: "Srijan Mishra",
+    position: "Head of Event Management",
+    image: SrijanMishra,
+    bio: "Finance and event management are interconnected through strategy and timing. He incorporates market insights into planning, ensuring that every event reflects economic trends. His ability to manage budgets, negotiate sponsorships, and optimize financial resources enhances the club’s ability to create high-impact experiences with maximum financial efficiency.",
+    linkedin: "https://www.linkedin.com/in/srijan-mishra-14bb922b4/",
+    //instagram: "https:////instagram.com",
   },
   {
-    name: "Neha Kapoor",
-    position: "Head of Events",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Organizes workshops, seminars, and competitions to enhance members' practical knowledge of finance.",
-    linkedin: "https://linkedin.com",
-    //instagram: "https://instagram.com",
+    name: "Yatri Patel",
+    position: "Head of Event Management",
+    image: YatriPatel,
+    bio: "Creative thinking and financial stability go hand in hand. She applies economic principles to event execution, ensuring that resources are allocated efficiently. By analyzing cost structures and market demand, she enhances profitability and engagement, making financial decision-making an integral part of organizing large-scale, impactful experiences.",
+    //linkedin: "https://linkedin.com",
+    //instagram: "https:////instagram.com",
   },
   {
-    name: "Arjun Reddy",
+    name: "Mohit Gurnani",
+    position: "Head of Digital Marketing",
+    image: MohitGurnani,
+    bio: "Digital landscapes shape financial markets, influencing investment behavior and business strategies. He deciphers online trends, consumer engagement, and market movements through a digital lens. By leveraging data analytics, algorithm-driven marketing, and real- time insights, he optimizes digital campaigns that align with both market trends and investor psychology.",
+    //linkedin: "https://linkedin.com",
+    //instagram: "https:////instagram.com",
+  },
+  {
+    name: "Arya Shah",
     position: "Head of Marketing",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Manages the club's brand image and promotes events to maximize student engagement and participation.",
-    linkedin: "https://linkedin.com",
-    //instagram: "https://instagram.com",
+    image: AryaShah,
+    bio: "Marketing is not just about promotions but understanding market cycles, consumer psychology, and financial trends. She crafts strategies that align with economic conditions, ensuring that branding decisions are backed by solid financial insights. Her work bridges the gap between financial literacy and creative storytelling, making complex concepts accessible.",
+    linkedin: "https://www.linkedin.com/in/aryashah17/",
+    //instagram: "https:////instagram.com",
   },
   {
-    name: "Meera Joshi",
-    position: "Head of Content",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Creates educational content on finance topics and manages the club's newsletter and social media.",
-    linkedin: "https://linkedin.com",
-    //instagram: "https://instagram.com",
+    name: "Deep Mathukiya",
+    position: "Head of Tech & IT",
+    image: DeepMathukiya,
+    bio: "Technology is reshaping finance, from algorithmic trading to blockchain advancements. He integrates tech-driven solutions into financial processes, enhancing efficiency and accuracy. Automation, AI-driven analytics, and digital transformation are his key focus areas, helping bridge the gap between traditional markets and the future of decentralized financial systems.",
+    linkedin: "https://www.linkedin.com/in/deepmathukiya/",
+    //instagram: "https:////instagram.com",
   },
   {
-    name: "Rohan Sharma",
-    position: "Head of Technical",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Manages the club's technical infrastructure and develops tools for financial analysis and learning.",
-    linkedin: "https://linkedin.com",
-    //instagram: "https://instagram.com",
+    name: "Dhruv Maradiya",
+    position: "Head of Tech & IT",
+    image: "DhruvMaradiya",
+    bio: "Innovation in fintech is revolutionizing how financial markets operate. He develops systems that enhance decision-making, using predictive analytics, automation, and smart algorithms. His work involves refining data processing, optimizing trading platforms, and ensuring that technological advancements lead to smarter, more informed investment strategies in an evolving financial landscape.",
+    linkedin: "http://linkedin.com/in/dhruvmaradiya/",
+    //instagram: "https:////instagram.com",
   },
   {
-    name: "Tanya Gupta",
-    position: "Head of Public Relations",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Builds and maintains relationships with industry professionals and other finance clubs.",
-    linkedin: "https://linkedin.com",
-    //instagram: "https://instagram.com",
+    name: "Arnav Dixit",
+    position: "Head of Graphic Design",
+    image: "ArnavDixit",
+    bio: "Financial concepts become powerful when visually represented with clarity. His designs simplify complex data, ensuring that trends, statistics, and analyses are easily understood. By merging creativity with financial knowledge, he creates compelling visual stories that make market insights engaging, accessible, and insightful for a broader audience.",
+    linkedin: "https://www.linkedin.com/in/arnav-dixitt/",
+    //instagram: "https:////instagram.com",
+  },
+  {
+    name: "Mohnish Pathak",
+    position: "Head of Content & Documentation",
+    image: MohnishPathak,
+    bio: "Financial literacy thrives on storytelling. He translates market complexities into engaging content, making economics and investment strategies easier to grasp. His approach involves breaking down data-driven insights, explaining global financial trends, and using narrative techniques to captivate audiences while ensuring information remains accurate and insightful..",
+    linkedin: "https://www.linkedin.com/in/mohnish-pathak-993634282/",
+    //instagram: "https:////instagram.com",
+  },
+  {
+    name: "Raj Shah",
+    position: "Head of Research & Analysis",
+    image: RajShah,
+    bio: "Data is the key to financial decision-making. He specializes in analyzing global economic trends, risk factors, and market patterns to make well-informed investment choices. His approach relies on statistical modeling, quantitative analysis, and deep research, ensuring that every financial move is backed by solid empirical evidence and critical thinking.",
+    //linkedin: "https://linkedin.com",
+    //instagram: "https:////instagram.com",
+  },
+  {
+    name: "Deep Singhala",
+    position: "Head of Sponsorships",
+    image: "DeepSinghala",
+    bio: "Sponsorships are strategic investments, not just financial contributions. He builds valuable partnerships by aligning business interests with financial incentives. His expertise lies in structuring deals that provide mutual benefits, securing long-term collaborations that contribute to both market presence and economic stability for all parties involved.",
+    //instagram: "https:////instagram.com",
   },
 ]
 
