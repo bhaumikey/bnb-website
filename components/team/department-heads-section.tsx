@@ -74,7 +74,7 @@ const departmentHeads = [
   },
   {
     name: "Raj Shah",
-    position: "Head of Research",
+    position: "Head of Research & Analysis",
     image: "/placeholder.svg?height=400&width=400",
     bio: "Data is the key to financial decision-making. He specializes in analyzing global economic trends, risk factors, and market patterns to make well-informed investment choices. His approach relies on statistical modeling, quantitative analysis, and deep research, ensuring that every financial move is backed by solid empirical evidence and critical thinking.",
     linkedin: "https://linkedin.com",
