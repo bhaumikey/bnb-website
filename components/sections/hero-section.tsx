@@ -5,9 +5,14 @@ import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import BlurText from "./BlurText"
 
 export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const handleAnimationComplete = () => {
+    console.log('Animation completed!');
+  };
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -147,9 +152,17 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="mb-8 text-xl font-medium text-foreground/80 md:text-2xl">Finance Club of PDEU</p>
-            <p className="mb-8 text-lg text-foreground/70">
-              Empowering students with financial knowledge and market insights
-            </p>
+            
+            {/* Added BlurText component here */}
+            <BlurText
+              text="Empowering students with financial knowledge and market insights"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-lg text-foreground/70 mb-8"
+            />
+            
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               {/* <Button
                 size="lg"
@@ -182,4 +195,3 @@ export default function HeroSection() {
     </section>
   )
 }
-

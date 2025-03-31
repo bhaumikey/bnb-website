@@ -115,7 +115,7 @@ export default function ContactSection() {
           >
             <div className="rounded-xl bg-card p-6 shadow-md dark:bg-card/80 dark:backdrop-blur-sm">
               <h3 className="mb-6 text-2xl font-bold">Send Us a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form action="https://formspree.io/f/mdkelbbn" method="POST" className="space-y-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
                     Name

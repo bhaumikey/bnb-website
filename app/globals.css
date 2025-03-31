@@ -112,4 +112,6 @@
     @apply bg-card/80 backdrop-blur-sm;
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}

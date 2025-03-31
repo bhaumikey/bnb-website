@@ -13,7 +13,7 @@ export default function BazaarHero() {
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <Image src="/images/bazaar-hero.jpg" alt="Bazaar Event" fill className="object-cover" priority />
+        {/* <Image src="/images/bazaar-hero.jpg" alt="Bazaar Event" fill className="object-cover" priority /> */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background"></div>
       </motion.div>
 
