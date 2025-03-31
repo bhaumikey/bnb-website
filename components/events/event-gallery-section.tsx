@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const galleryImages = [
   {
@@ -315,7 +316,7 @@ export default function EventGallerySection() {
             transition={{ duration: 0.5 }}
             className="absolute inset-0"
           >
-            <img
+            <LazyLoadImage
               src={featuredImages[currentSlide].src}
               alt={featuredImages[currentSlide].alt}
               className="w-full h-full object-cover"
@@ -407,7 +408,7 @@ export default function EventGallerySection() {
                 transition={{ duration: 0.3 }}
                 className="aspect-square"
               >
-                <img
+                <LazyLoadImage
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500"
@@ -487,7 +488,7 @@ export default function EventGallerySection() {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-              <img
+              <LazyLoadImage
                 src={filteredImages[selectedImage].src}
                 alt={filteredImages[selectedImage].alt}
                 className="max-h-[80vh] rounded-lg object-contain shadow-xl"
