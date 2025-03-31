@@ -7,7 +7,6 @@ import TeamMemberCard from "@/components/team/team-member-card"
 import Image from 'next/image'
 
 import Bhaumik from "@/public/B&B_Photos/BhaumikPatel.jpg"
-import Viral from "@/public/B&B_Photos/ViralVaghela.jpg"
 import Soham from "@/public/B&B_Photos/Soham Borsadiya.jpg"
 import Yug from "@/public/B&B_Photos/Yug Prajapati.jpg"
 import Darshil from "@/public/B&B_Photos/Darshil Desai.jpg"
@@ -80,7 +79,7 @@ const subcommitteeMembers = {
     {
       name: "Viral Vaghela",
       position: "App Developer",
-      image: Viral,
+      image: 'https://i.ibb.co/0yfT8FXn/Viral-Vaghela.jpg',
       flip: false,
     },
     {
