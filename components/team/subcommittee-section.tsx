@@ -77,31 +77,31 @@ const subcommitteeMembers = {
   "Tech & IT": [
     {
       name: "Bhaumik Patel",
-      position: "Future-Ready Innovator",
+      position: "",
       image: Bhaumik,
       flip: false,
     },
     {
       name: "Viral Vaghela",
-      position: "App Developer",
+      position: "",
       image: 'https://i.ibb.co/0yfT8FXn/Viral-Vaghela.jpg',
       flip: false,
     },
     {
       name: "Nishu Shukla",
-      position: "Database Administrator",
+      position: "",
       image: Nishu,
       flip: false,
     },
     {
       name: "Aashvi Padhiyar",
-      position: "UI/UX Designer",
+      position: "",
       image: Aashvi,
       flip: false,
     },
     {
       name: "Shoury Mishra",
-      position: "Backend Developer",
+      position: "",
       image: Shoury,
       flip: false,
     },
