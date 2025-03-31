@@ -16,7 +16,7 @@ import DeepMathukiya from "@/public/B&B_Photos/Deep Mathukiya.jpg";
 //import ArnavDixit from "@/public/B&B_Photos/Arnav Dixit.jpg";
 import MohnishPathak from "@/public/B&B_Photos/Mohnish Pathak.jpg";
 import RajShah from "@/public/B&B_Photos/Raj Shah.jpg";
-//import DeepSinghala from "@/public/B&B_Photos/Deep Singhala.jpg";
+import DeepS from "@/public/B&B_Photos/Deep Shingala.jpg";
 
 const departmentHeads = [
   {
@@ -94,7 +94,7 @@ const departmentHeads = [
   {
     name: "Deep Singhala",
     position: "Head of Sponsorships",
-    image: "DeepSinghala",
+    image: DeepS,
     bio: "Sponsorships are strategic investments, not just financial contributions. He builds valuable partnerships by aligning business interests with financial incentives. His expertise lies in structuring deals that provide mutual benefits, securing long-term collaborations that contribute to both market presence and economic stability for all parties involved.",
     //instagram: "https:////instagram.com",
   },

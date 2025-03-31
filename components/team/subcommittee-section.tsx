@@ -17,6 +17,7 @@ import Kasundra from "@/public/B&B_Photos/Donnakasundra.jpg"
 import Pratham from "@/public/B&B_Photos/Pratham Mehta.jpg"
 import Aashvi from "@/public/B&B_Photos/Aashvi Padhiyar.jpg"
 import Deep from "@/public/B&B_Photos/Deep Mathukiya.jpg"
+//import DeepS form "@/public/B&B_Photos/Deep Shingala.jpg"
 import Paril from "@/public/B&B_Photos/Paril Paladiya.jpg"
 import Drashti from "@/public/B&B_Photos/Drashti Master.jpg"
 //import Neil from "@/public/B&B_Photos/Neil Gandhi.jpg"
@@ -27,7 +28,7 @@ import Suribhi from "@/public/B&B_Photos/SuribhiYadav.jpg"
 import AayushiS from "@/public/B&B_Photos/Aayushi Shah.jpg"
 import Daksh from "@/public/B&B_Photos/dakshMathus.jpg"
 import Anshul from "@/public/B&B_Photos/AnshulBhatt.jpg"
-import DeepS from "@/public/B&B_Photos/Deep Shingala.jpg"
+//import DeepS from "@/public/B&B_Photos/Deep Shingala.jpg"
 import Harsh from "@/public/B&B_Photos/Harsh Patil.jpg"
 import Karan from "@/public/B&B_Photos/Karan Boda.jpeg"
 //import Muskan from "@/public/B&B_Photos/Muskan Goplani.jpg"
@@ -54,6 +55,10 @@ import Ved from "@/public/B&B_Photos/Ved Patel.jpg"
 import Bhumi from "@/public/B&B_Photos/BhumiShah.jpg"
 import Jhil from "@/public/B&B_Photos/Jhil Mandavia.jpg"
 import AayushiP from "@/public/B&B_Photos/Aayushi Patel.jpg"
+import DiyaP from "@/public/B&B_Photos/DIya Pat.jpg"
+import KalpD from "@/public/B&B_Photos/Kalp D.jpeg"
+import Helish from  "@/public/B&B_Photos/Helish P.jpeg"
+
 
 // Define departments
 const departments = [
@@ -261,7 +266,7 @@ const subcommitteeMembers = {
     {
       name: "Kalp Dhariwal",
       position: "",
-      image: "Kalp",
+      image: KalpD,
       flip: false,
     },
     {
@@ -279,7 +284,7 @@ const subcommitteeMembers = {
     {
       name: "Diya Patel",
       position: "",
-      image: "Diya",
+      image: DiyaP,
       flip: false,
     },
     {
@@ -319,7 +324,7 @@ const subcommitteeMembers = {
     {
       name: "Helish Patel",
       position: "",
-      image: "Helish",
+      image: Helish,
       flip: false,
     },
     {
