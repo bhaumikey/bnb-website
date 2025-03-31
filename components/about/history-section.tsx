@@ -23,22 +23,22 @@ const milestones = [
       "This was our first main flagship event in which the student need to invest according news given to them and then need to analyze the news and invest accordingly which was held on 18th of november.",
   },
   {
-    year: "2020",
-    title: "Digital Transformation",
-    description:
-      "Pivoted to virtual events during the pandemic, expanding our reach and introducing new online learning resources.",
-  },
-  {
-    year: "2022",
-    title: "National Recognition",
-    description:
-      "Received recognition as one of the top finance clubs among Indian universities, with our trading simulation platform adopted by other institutions.",
-  },
-  {
     year: "2023",
-    title: "International Partnerships",
+    title: "Fantasia",
     description:
-      "Established partnerships with international finance clubs and organizations, enabling global networking opportunities for our members.",
+      "Fintasia redefined financial strategy, where stocks, bonds, and crypto became superpowers in an intense market battle. The event’s unique integration of real-time financial news set a new benchmark, further cementing Bulls & Bears’ legacy in hosting elite finance competitions.",
+  },
+  {
+    year: "2024",
+    title: "1st ever Bulls & Bears Spotify Podcast",
+    description:
+      "Our club took a bold step into the digital space with the launch of our Spotify podcast series! Covering finance, markets, and investment strategies, we aim to educate and engage beyond PDEU. Stay tuned for insights from experts and club members alike!",
+  },
+  {
+    year: "2024",
+    title: "bazaar 6.0",
+    description:
+      "We revolutionized the Bazaar 6.0 experience with a brand-new website, ensuring seamless event management!  From interactive dashboards to real-time updates, our tech-driven approach elevated user experience. This milestone set a new benchmark for event platforms at PDEU! .",
   },
 ]
 

@@ -5,31 +5,38 @@ import { motion } from "framer-motion"
 import { Calendar, Users } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+
+import hisabkitab from "@/public/events/Hisaab_Kitaab.png"
+import pdyb from "@/public/events/Paisa double ya bubble.png"
+import cc from "@/public/events/Crisis Compass Poster.png"
 
 const events = [
   {
-    title: "Annual Finance Summit",
-    date: "March 15, 2024",
+    title: "Hisaab Kitaab",
+    date: "March 22, 2025",
     description:
-      "A day-long summit featuring keynote speakers from the finance industry, panel discussions, and networking opportunities.",
-    image: "/placeholder.svg?height=400&width=600",
-    attendees: "200+",
+      "A financial literacy initiative in collaboration with Rotaract, empowering security guards, helpers, and support staff with essential knowledge on managing finances, investing wisely, avoiding scams, and accessing beneficial schemes.",
+    image: hisabkitab,
+    attendees: "75+",
+    highlights: ["Industry expert keynotes", "Career fair", "Networking opportunities"],
   },
   {
-    title: "Stock Market Simulation",
-    date: "April 10-30, 2024",
-    description:
-      "A three-week virtual stock trading competition where participants manage a simulated portfolio to maximize returns.",
-    image: "/placeholder.svg?height=400&width=600",
-    attendees: "150+",
+    title: "Paisa Double ya Bubble",
+    date: "March 21, 2025",
+    description: "A strategic finance game where participants analyze how different sectors react to news and economic changes. Understand past trends, evaluate market performance, and uncover the impact of news on investments.",
+    image: pdyb,
+    attendees: "50+",
+    highlights: ["Hands-on trading simulation", "understanding basics", "DeFi exploration","easy trading"],
   },
   {
-    title: "Financial Literacy Workshop",
-    date: "May 5, 2024",
+    title: "Crisis Compass",
+    date: "Octomber 20, 2024",
     description:
-      "An interactive workshop on personal finance basics, including budgeting, saving, and investing for college students.",
-    image: "/placeholder.svg?height=400&width=600",
-    attendees: "100+",
+      "Navigate through a market crash! Make strategic decisions to minimize losses and emerge as the most resilient investor.",
+    image: cc,
+    attendees: "60+",
+    highlights: [ "Real-time market data", "Expert mentoring", "protection of assets", "strategic decision making"],
   },
 ]
 
@@ -78,10 +85,11 @@ export default function EventsSection() {
                   className="overflow-hidden rounded-xl shadow-lg"
                   whileHover={{ scale: 1.03 }}
                 >
-                  <img
+                  <Image
                     src={event.image || "/placeholder.svg"}
                     alt={event.title}
                     className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    layout="responsive"
                   />
                 </motion.div>
               </div>

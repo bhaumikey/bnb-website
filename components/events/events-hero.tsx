@@ -7,7 +7,7 @@ import { CalendarClock } from "lucide-react";
 
 export default function EventsHero() {
   // Target event date
-  const nextEventDate = new Date("2025-03-30T16:00:00");
+  const nextEventDate = new Date("2025-04-02T16:00:00");
   
   // State for countdown timer
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());

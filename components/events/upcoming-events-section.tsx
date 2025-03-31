@@ -5,37 +5,39 @@ import { motion } from "framer-motion"
 import { Calendar, MapPin, Clock, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+import market_un from "@/public/events/Bulls& Bears.jpg"
+
 const upcomingEvents = [
   {
-    title: "Financial Literacy Workshop",
-    date: "May 15, 2024",
-    time: "10:00 AM - 1:00 PM",
-    location: "PDEU Auditorium",
+    title: "Market Unlocked",
+    date: "April 02, 2025",
+    time: "4:00 PM - 6:00 PM",
+    location: "TBA",
     description: "Learn the basics of personal finance, budgeting, and investment strategies for college students.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: market_un,
     capacity: "100 seats",
-    registrationOpen: true,
-  },
-  {
-    title: "Stock Market Simulation Competition",
-    date: "June 5-25, 2024",
-    time: "Online Event",
-    location: "Virtual Platform",
-    description: "Compete with fellow students in a virtual stock trading competition with real-time market data.",
-    image: "/placeholder.svg?height=400&width=600",
-    capacity: "Unlimited",
-    registrationOpen: true,
-  },
-  {
-    title: "Investment Banking Career Panel",
-    date: "July 10, 2024",
-    time: "3:00 PM - 5:00 PM",
-    location: "PDEU Conference Hall",
-    description: "Hear from alumni and industry professionals about careers in investment banking and finance.",
-    image: "/placeholder.svg?height=400&width=600",
-    capacity: "150 seats",
     registrationOpen: false,
   },
+  // {
+  //   title: "Stock Market Simulation Competition",
+  //   date: "June 5-25, 2024",
+  //   time: "Online Event",
+  //   location: "Virtual Platform",
+  //   description: "Compete with fellow students in a virtual stock trading competition with real-time market data.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   capacity: "Unlimited",
+  //   registrationOpen: true,
+  // },
+  // {
+  //   title: "Investment Banking Career Panel",
+  //   date: "July 10, 2024",
+  //   time: "3:00 PM - 5:00 PM",
+  //   location: "PDEU Conference Hall",
+  //   description: "Hear from alumni and industry professionals about careers in investment banking and finance.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   capacity: "150 seats",
+  //   registrationOpen: false,
+  // },
 ]
 
 export default function UpcomingEventsSection() {
@@ -71,7 +73,7 @@ export default function UpcomingEventsSection() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="relative h-60 md:h-full overflow-hidden">
                   <img
-                    src={event.image || "/placeholder.svg"}
+                    src={typeof event.image === "string" ? event.image : event.image.src || "/placeholder.svg"}
                     alt={event.title}
                     className="h-full w-full object-cover"
                   />

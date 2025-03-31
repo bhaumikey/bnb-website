@@ -74,8 +74,8 @@ export default function ContactSection() {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <span className="font-medium">Email:</span>
-                  <a href="mailto:bullsandbears@pdeu.ac.in" className="text-primary hover:underline">
-                    bullsandbears@pdeu.ac.in
+                  <a href="mailto:pdpubnb@gmail.com" className="text-primary hover:underline">
+                    pdpubnb@gmail.com
                   </a>
                 </p>
                 <p className="flex items-center gap-2">

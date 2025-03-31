@@ -4,32 +4,37 @@ import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Calendar, Users } from "lucide-react"
 
+import hisabkitab from "@/public/events/Hisaab_Kitaab.png"
+import pdyb from "@/public/events/Paisa double ya bubble.png"
+import cc from "@/public/events/Crisis Compass Poster.png"
+
+
 const pastEvents = [
   {
-    title: "Annual Finance Summit 2023",
-    date: "November 15, 2023",
+    title: "Hisaab Kitaab",
+    date: "March 22, 2025",
     description:
-      "A day-long summit featuring keynote speakers from the finance industry, panel discussions, and networking opportunities.",
-    image: "/placeholder.svg?height=400&width=600",
-    attendees: "200+",
-    highlights: ["Industry expert keynotes", "Career fair", "Networking dinner"],
+      "A financial literacy initiative in collaboration with Rotaract, empowering security guards, helpers, and support staff with essential knowledge on managing finances, investing wisely, avoiding scams, and accessing beneficial schemes.",
+    image: hisabkitab,
+    attendees: "75+",
+    highlights: ["Industry expert keynotes", "Career fair", "Networking opportunities"],
   },
   {
-    title: "Cryptocurrency Workshop",
-    date: "September 5, 2023",
-    description: "An interactive workshop on blockchain technology, cryptocurrency markets, and decentralized finance.",
-    image: "/placeholder.svg?height=400&width=600",
-    attendees: "120+",
-    highlights: ["Hands-on trading simulation", "Blockchain basics", "DeFi exploration"],
+    title: "Paisa Double ya Bubble",
+    date: "March 21, 2025",
+    description: "A strategic finance game where participants analyze how different sectors react to news and economic changes. Understand past trends, evaluate market performance, and uncover the impact of news on investments.",
+    image: pdyb,
+    attendees: "50+",
+    highlights: ["Hands-on trading simulation", "understanding basics", "DeFi exploration","easy trading"],
   },
   {
-    title: "Stock Market Simulation 2023",
-    date: "July 10-30, 2023",
+    title: "Crisis Compass",
+    date: "Octomber 20, 2024",
     description:
-      "A three-week virtual stock trading competition where participants managed a simulated portfolio to maximize returns.",
-    image: "/placeholder.svg?height=400&width=600",
-    attendees: "150+",
-    highlights: ["₹20,000 prize pool", "Real-time market data", "Expert mentoring"],
+      "Navigate through a market crash! Make strategic decisions to minimize losses and emerge as the most resilient investor.",
+    image: cc,
+    attendees: "60+",
+    highlights: [ "Real-time market data", "Expert mentoring", "protection of assets", "strategic decision making"],
   },
 ]
 
@@ -72,7 +77,7 @@ export default function PastEventsSection() {
                   whileHover={{ scale: 1.03 }}
                 >
                   <img
-                    src={event.image || "/placeholder.svg"}
+                    src={typeof event.image === "string" ? event.image : event.image?.src || "/placeholder.svg"}
                     alt={event.title}
                     className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                   />
