@@ -61,6 +61,7 @@
     "react-dom": "^19",
     "react-hook-form": "^7.54.1",
     "react-intersection-observer": "latest",
+    "react-lazy-load-image-component": "^1.6.3",
     "react-native": "latest",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",

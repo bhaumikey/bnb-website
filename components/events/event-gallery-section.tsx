@@ -491,6 +491,7 @@ export default function EventGallerySection() {
                 src={filteredImages[selectedImage].src}
                 alt={filteredImages[selectedImage].alt}
                 className="max-h-[80vh] rounded-lg object-contain shadow-xl"
+                loading="lazy"
               />
               
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm rounded-b-lg text-white">
