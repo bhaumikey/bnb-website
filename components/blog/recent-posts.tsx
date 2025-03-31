@@ -72,7 +72,7 @@ export default function RecentPosts() {
   return (
     <section className="bg-background py-16" ref={ref}>
       <div className="container px-4">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
@@ -80,10 +80,10 @@ export default function RecentPosts() {
         >
           <h2 className="mb-2 text-3xl font-bold">Recent Articles</h2>
           <p className="text-lg text-muted-foreground">Stay updated with our latest financial insights</p>
-        </motion.div>
+        </motion.div> */}
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {recentPosts.map((post, index) => (
+          {/* {recentPosts.map((post, index) => (
             <motion.article
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
@@ -130,10 +130,10 @@ export default function RecentPosts() {
                 </Link>
               </div>
             </motion.article>
-          ))}
+          ))} */}
         </div>
 
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -141,7 +141,7 @@ export default function RecentPosts() {
           >
             Load More Articles
           </motion.button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

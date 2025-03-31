@@ -72,7 +72,7 @@ export default function ContactForm() {
           </p>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form action="https://formspree.io/f/mdkelbbn" method="POST"  className="space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium">

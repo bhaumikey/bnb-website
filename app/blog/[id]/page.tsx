@@ -7,6 +7,10 @@ import { CalendarDays, User, Tag, Clock } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
+
+import blog1 from "@/public/blog1.jpeg"
+import blog2 from "@/public/blog2.webp"
 
 
 // Sample blog posts data
@@ -58,9 +62,9 @@ const blogPosts = [
       <h2 class="text-2xl font-bold mt-8 mb-4 text-primary">Conclusion</h2>
       <p class="text-lg leading-relaxed mb-6">Market volatility is an inherent part of investing. By understanding its causes and implementing appropriate strategies, investors can navigate volatile periods more effectively and potentially turn market turbulence into opportunity.</p>
     `,
-    image: "/images/blog-1.jpg",
-    date: "March 10, 2024",
-    author: "Priya Patel",
+    image: blog1,
+    date: "March 31, 2025",
+    author: "Vishva Gandhi",
     category: "Investment",
     tags: ["volatility", "risk management", "investment strategy"],
     readTime: "8 min read"
@@ -116,9 +120,9 @@ const blogPosts = [
       <h2 class="text-2xl font-bold mt-8 mb-4 text-primary">Conclusion: The Increasing Importance of Geopolitical Analysis</h2>
       <p class="text-lg leading-relaxed mb-6">As global markets become increasingly interconnected, geopolitical analysis is becoming an essential component of investment decision-making. Investors who develop a framework for understanding and responding to geopolitical events will be better positioned to protect their portfolios and identify opportunities amid uncertainty.</p>
     `,
-    image: "/images/blog-2.jpg",
-    date: "March 5, 2024",
-    author: "Rahul Mehta",
+    image: blog2,
+    date: "March 31, 2025",
+    author: "Kartik Akbari",
     category: "Global Finance",
     tags: ["geopolitics", "global markets", "risk analysis"],
     readTime: "10 min read"
@@ -149,7 +153,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
       description: post.excerpt,
       images: [
         {
-          url: post.image,
+          url: post.image.src,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -160,7 +164,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
       card: "summary_large_image",
       title: `${post.title} | Bulls & Bears Insights`,
       description: post.excerpt,
-      images: [post.image],
+      images: [{ url: post.image.src }],
     },
   }
 }
@@ -188,7 +192,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
         <article className="bg-white rounded-xl shadow-lg overflow-hidden">
           {/* Featured Image */}
           <div className="h-96 w-full relative">
-            <img 
+            <Image 
               src={post.image} 
               alt={post.title}
               className="w-full h-full object-cover"

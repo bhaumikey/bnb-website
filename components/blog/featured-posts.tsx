@@ -6,15 +6,18 @@ import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, ArrowRight } from "lucide-react"
 
+import blog1 from "@/public/blog1.jpeg"
+import blog2 from "@/public/blog2.webp"
+
 const featuredPosts = [
   {
     id: 1,
     title: "Understanding Market Volatility: A Beginner's Guide",
     excerpt:
       "Learn how to navigate market fluctuations and make informed investment decisions during volatile periods.",
-    image: "/images/blog-1.jpg",
-    date: "March 10, 2024",
-    author: "Priya Patel",
+    image: blog1,
+    date: "March 31, 2025",
+    author: "vishva gandhi",
     category: "Investment",
   },
   {
@@ -22,9 +25,9 @@ const featuredPosts = [
     title: "The Impact of Geopolitical Events on Global Markets",
     excerpt:
       "An analysis of how international conflicts and political developments affect financial markets worldwide.",
-    image: "/images/blog-2.jpg",
-    date: "March 5, 2024",
-    author: "Rahul Mehta",
+    image: blog2,
+    date: "March 31, 2025",
+    author: "Kartik Akbari",
     category: "Global Finance",
   },
 ]

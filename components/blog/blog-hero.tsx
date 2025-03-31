@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 
+import fin_in2 from "@/public/Fin_insights.jpg"
+
 export default function BlogHero() {
   return (
     <section className="relative pt-20">
@@ -22,13 +24,13 @@ export default function BlogHero() {
               regularly updated blog.
             </p>
             <div className="flex flex-wrap gap-4">
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="rounded-full bg-amber-600 px-6 py-3 font-medium text-white shadow-md transition-all hover:bg-amber-700 hover:shadow-lg"
               >
                 Latest Articles
-              </motion.button>
+              </motion.button> */}
               
             </div>
           </motion.div>
@@ -41,7 +43,7 @@ export default function BlogHero() {
           >
             <div className="relative h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/images/blog-hero.jpg"
+                src={fin_in2}
                 alt="Financial analysis and stock market charts"
                 fill
                 className="object-cover"
