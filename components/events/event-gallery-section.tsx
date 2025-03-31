@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { useInView } from "react-intersection-observer"
-import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight, X } from "lucide-react"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const galleryImages = [
   {
@@ -35,52 +35,52 @@ const galleryImages = [
   {
     src: "https://i.ibb.co/0yJLhf8C/Photo1.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/VW7gDnKG/Photo2.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/23TGthBL/Photo3.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/67v8wjbq/Photo4.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/ZzmYjzXT/Photo5.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/r24tJSkT/Photo6.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/dJGbZG3n/Photo7.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/mCbhyqcJ/Photo8.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/27bPYSdQ/Photo9.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/Dftb0d3b/Photo10.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/N2DqmJqR/Photo1.jpg",
@@ -195,113 +195,120 @@ const galleryImages = [
   {
     src: "https://i.ibb.co/23GRHMCc/IMG-0012.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/LXcFWk4d/IMG-0387.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/cSXBX7qk/IMG-0390.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/zWZmVkq0/IMG-0394.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/Xff2Qv81/IMG-0398.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/604HC74x/IMG-0399.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/3YGBxxQ8/IMG-0426.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
   {
     src: "https://i.ibb.co/KcQMsVhD/IMG-0437.jpg",
     alt: "Competition participants",
-    category: "Competition"
+    category: "Competition",
   },
-]
+];
 
 export default function EventGallerySection() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
-  })
+  });
 
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [selectedImage, setSelectedImage] = useState<number | null>(null)
-  const [filter, setFilter] = useState<string>("All")
-  const [isHovering, setIsHovering] = useState<number | null>(null)
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [filter, setFilter] = useState<string>("All");
+  const [isHovering, setIsHovering] = useState<number | null>(null);
 
   // Auto-rotate slides every 2.5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % featuredImages.length)
-    }, 2500)
-    return () => clearInterval(interval)
-  }, [])
+      setCurrentSlide((prev) => (prev + 1) % featuredImages.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
 
   // Count images by category
-  const categoryCounts: Record<string, number> = galleryImages.reduce<Record<string, number>>((acc, img) => {
-    const category = img.category.toLowerCase()
-    acc[category] = (acc[category] || 0) + 1
-    return acc
-  }, {})
+  const categoryCounts: Record<string, number> = galleryImages.reduce<
+    Record<string, number>
+  >((acc, img) => {
+    const category = img.category.toLowerCase();
+    acc[category] = (acc[category] || 0) + 1;
+    return acc;
+  }, {});
 
-  const categories = ["All", "Fun", "Workshop", "Competition", "Networking"]
+  const categories = ["All", "Fun", "Workshop", "Competition", "Networking"];
 
   // Featured images for the slideshow (first 5 images)
-  const featuredImages = galleryImages.slice(0, 5)
+  const featuredImages = galleryImages.slice(0, 5);
 
   // Filter images based on selection (case-insensitive)
-  const filteredImages = filter === "All" 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category.toLowerCase() === filter.toLowerCase())
+  const filteredImages =
+    filter === "All"
+      ? galleryImages
+      : galleryImages.filter(
+          (img) => img.category.toLowerCase() === filter.toLowerCase()
+        );
 
   const openLightbox = (index: number) => {
-    setSelectedImage(index)
-    document.body.style.overflow = "hidden"
-  }
+    setSelectedImage(index);
+    document.body.style.overflow = "hidden";
+  };
 
   const closeLightbox = () => {
-    setSelectedImage(null)
-    document.body.style.overflow = "auto"
-  }
+    setSelectedImage(null);
+    document.body.style.overflow = "auto";
+  };
 
   const navigateImage = (direction: "next" | "prev") => {
-    if (selectedImage === null) return
+    if (selectedImage === null) return;
 
     if (direction === "next") {
-      setSelectedImage((selectedImage + 1) % filteredImages.length)
+      setSelectedImage((selectedImage + 1) % filteredImages.length);
     } else {
-      setSelectedImage((selectedImage - 1 + filteredImages.length) % filteredImages.length)
+      setSelectedImage(
+        (selectedImage - 1 + filteredImages.length) % filteredImages.length
+      );
     }
-  }
+  };
 
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (selectedImage === null) return
-      if (e.key === "Escape") closeLightbox()
-      if (e.key === "ArrowRight") navigateImage("next")
-      if (e.key === "ArrowLeft") navigateImage("prev")
-    }
-    
-    window.addEventListener("keydown", handleKeyDown)
-    return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [selectedImage, filteredImages])
+      if (selectedImage === null) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") navigateImage("next");
+      if (e.key === "ArrowLeft") navigateImage("prev");
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage, filteredImages]);
 
   return (
     <div className="min-h-screen bg-white font-sans" ref={ref}>
@@ -317,13 +324,14 @@ export default function EventGallerySection() {
             className="absolute inset-0"
           >
             <LazyLoadImage
+              threshold={300}
               src={featuredImages[currentSlide].src}
               alt={featuredImages[currentSlide].alt}
               className="w-full h-full object-cover"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-              <motion.h1 
+              <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -341,7 +349,9 @@ export default function EventGallerySection() {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${currentSlide === index ? 'bg-white w-6' : 'bg-white/50'}`}
+              className={`w-3 h-3 rounded-full transition-all ${
+                currentSlide === index ? "bg-white w-6" : "bg-white/50"
+              }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -356,8 +366,12 @@ export default function EventGallerySection() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">Event Gallery</h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-600 mb-8">Glimpses from our previous events</p>
+          <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
+            Event Gallery
+          </h2>
+          <p className="mx-auto max-w-2xl text-lg text-gray-600 mb-8">
+            Glimpses from our previous events
+          </p>
 
           {/* Filter Controls */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -368,12 +382,12 @@ export default function EventGallerySection() {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setFilter(category)}
                 className={`px-5 py-2 text-sm uppercase tracking-wider border transition-all ${
-                  filter === category 
-                    ? 'bg-black text-white border-black shadow-md' 
-                    : 'border-gray-300 hover:bg-gray-100 text-gray-700'
+                  filter === category
+                    ? "bg-black text-white border-black shadow-md"
+                    : "border-gray-300 hover:bg-gray-100 text-gray-700"
                 } rounded-full`}
               >
-                {category} 
+                {category}
                 {category !== "All" && (
                   <span className="ml-1 font-normal">
                     ({categoryCounts[category.toLowerCase()] || 0})
@@ -403,12 +417,13 @@ export default function EventGallerySection() {
             >
               <motion.div
                 animate={{
-                  scale: isHovering === index ? 1.05 : 1
+                  scale: isHovering === index ? 1.05 : 1,
                 }}
                 transition={{ duration: 0.3 }}
                 className="aspect-square"
               >
                 <LazyLoadImage
+                  threshold={300}
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500"
@@ -433,7 +448,7 @@ export default function EventGallerySection() {
             className="text-center py-16"
           >
             <p className="text-gray-500">No images found in this category</p>
-            <button 
+            <button
               className="mt-4 px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
               onClick={() => setFilter("All")}
             >
@@ -446,7 +461,7 @@ export default function EventGallerySection() {
       {/* Lightbox */}
       <AnimatePresence>
         {selectedImage !== null && (
-          <motion.div 
+          <motion.div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -460,11 +475,11 @@ export default function EventGallerySection() {
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm shadow-md">
               {selectedImage + 1} / {filteredImages.length}
             </div>
-            
+
             <button
               className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white hover:bg-black/70 transition-colors"
               onClick={() => navigateImage("prev")}
@@ -472,7 +487,7 @@ export default function EventGallerySection() {
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
-            
+
             <button
               className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white hover:bg-black/70 transition-colors"
               onClick={() => navigateImage("next")}
@@ -480,8 +495,8 @@ export default function EventGallerySection() {
             >
               <ChevronRight className="h-6 w-6" />
             </button>
-            
-            <motion.div 
+
+            <motion.div
               className="relative max-h-[90vh] max-w-[90vw]"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -489,16 +504,19 @@ export default function EventGallerySection() {
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               <LazyLoadImage
+                threshold={300}
                 src={filteredImages[selectedImage].src}
                 alt={filteredImages[selectedImage].alt}
                 className="max-h-[80vh] rounded-lg object-contain shadow-xl"
                 loading="lazy"
               />
-              
+
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm rounded-b-lg text-white">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-medium">{filteredImages[selectedImage].alt}</h3>
+                    <h3 className="font-medium">
+                      {filteredImages[selectedImage].alt}
+                    </h3>
                     <span className="inline-block mt-1 text-sm text-white/70">
                       {filteredImages[selectedImage].category}
                     </span>
@@ -518,5 +536,5 @@ export default function EventGallerySection() {
         <p>Copyright © {new Date().getFullYear()} All rights reserved</p>
       </footer>
     </div>
-  )
+  );
 }
