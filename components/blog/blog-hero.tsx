@@ -29,13 +29,7 @@ export default function BlogHero() {
               >
                 Latest Articles
               </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="rounded-full border border-amber-600 bg-transparent px-6 py-3 font-medium text-amber-600 transition-all hover:bg-amber-600/10"
-              >
-                Subscribe
-              </motion.button>
+              
             </div>
           </motion.div>
 
@@ -95,7 +89,7 @@ export default function BlogHero() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">New Articles</p>
-                  <p className="font-medium text-blue-600">Weekly</p>
+                  <p className="font-medium text-blue-600">BiWeekly</p>
                 </div>
               </div>
             </motion.div>

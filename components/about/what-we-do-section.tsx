@@ -29,18 +29,6 @@ const activities = [
     description:
       "Finance-themed competitions that challenge students to solve real-world financial problems, analyze case studies, and present investment strategies.",
   },
-  {
-    icon: <Calendar className="h-8 w-8 text-amber-600" />,
-    title: "Annual Finance Summit",
-    description:
-      "Our flagship event featuring keynote speakers, panel discussions, workshops, and networking opportunities with industry leaders.",
-  },
-  {
-    icon: <BarChart className="h-8 w-8 text-amber-600" />,
-    title: "Research Publications",
-    description:
-      "Student-led research on market trends, investment opportunities, and economic developments, published through our newsletter and blog.",
-  },
 ]
 
 export default function WhatWeDoSection() {

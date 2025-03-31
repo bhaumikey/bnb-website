@@ -13,22 +13,22 @@ export default function BazaarInfo() {
   const features = [
     {
       icon: <Calendar className="h-6 w-6 text-amber-500" />,
-      title: "March 15-17, 2024",
-      description: "Three days of immersive financial trading experience",
+      title: "October 19, 2024",
+      description: "A single day of immersive financial trading experience",
     },
     {
       icon: <MapPin className="h-6 w-6 text-amber-500" />,
       title: "PDEU Campus",
-      description: "Main Auditorium, Pandit Deendayal Energy University",
+      description: "BLT-1, Pandit Deendayal Energy University",
     },
     {
       icon: <Clock className="h-6 w-6 text-amber-500" />,
-      title: "10:00 AM - 5:00 PM",
-      description: "Full day event with lunch and refreshments provided",
+      title: "9:00 AM - 4:00 PM",
+      description: "Full day event with refreshments provided",
     },
     {
       icon: <Trophy className="h-6 w-6 text-amber-500" />,
-      title: "₹50,000 Prize Pool",
+      title: "₹12,000 Prize Pool",
       description: "Compete to win cash prizes and internship opportunities",
     },
   ]
@@ -45,7 +45,7 @@ export default function BazaarInfo() {
           <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">About Bazaar</h2>
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
             Bazaar is Bulls & Bears' flagship event that simulates real-world financial markets. Participants trade
-            virtual stocks, commodities, and currencies in a dynamic environment that reacts to real-time market
+            virtual stocks in a dynamic environment that reacts to real-time market
             conditions and simulated news events.
           </p>
         </motion.div>

@@ -26,17 +26,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="text-muted-foreground hover:text-foreground">
+                <Link href="/about" className="text-muted-foreground hover:text-foreground">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/#team" className="text-muted-foreground hover:text-foreground">
+                <Link href="/team" className="text-muted-foreground hover:text-foreground">
                   Team
                 </Link>
               </li>
               <li>
-                <Link href="/#events" className="text-muted-foreground hover:text-foreground">
+                <Link href="/events" className="text-muted-foreground hover:text-foreground">
                   Events
                 </Link>
               </li>

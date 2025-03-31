@@ -27,9 +27,10 @@ export default function BazaarHero() {
           >
             <h1 className="mb-6 text-5xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
               <span className="bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent">
-                Bazaar 2024
+                Bazaar
               </span>
             </h1>
+            
             <p className="mb-8 text-xl font-medium text-foreground/90 md:text-2xl">
               The Premier Financial Trading Simulation Event
             </p>

@@ -50,7 +50,7 @@ export default function AboutHero() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Founded</p>
-                  <p className="font-medium text-amber-600">2015</p>
+                  <p className="font-medium text-amber-600">2018</p>
                 </div>
               </div>
             </motion.div>
@@ -74,7 +74,7 @@ export default function AboutHero() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Members</p>
-                  <p className="font-medium text-teal-600">100+ Students</p>
+                  <p className="font-medium text-teal-600">50+ Students</p>
                 </div>
               </div>
             </motion.div>

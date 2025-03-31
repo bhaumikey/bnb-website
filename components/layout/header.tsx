@@ -5,6 +5,8 @@ import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu } from "lucide-react"
 import ThemeToggle from "@/components/ui/theme-toggle"
+import bullLogo from "@/public/bull-logo.png"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 interface NavItem {
@@ -49,9 +51,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-background/70 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-background/70 backdrop-blur-md shadow-md" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
@@ -59,12 +60,20 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="group relative block">
               <motion.div
-                className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-primary/20 bg-background/80 shadow-lg transition-all duration-300 hover:shadow-xl backdrop-blur-sm"
+                className="relative mt-2 h-12 w-12 md:h-14 md:w-14 overflow-hidden rounded-full border-2 border-primary/20 bg-background/80 shadow-lg transition-all duration-300 hover:shadow-xl backdrop-blur-sm"
                 whileHover={{ scale: 1.05, borderColor: "rgba(245, 158, 11, 0.5)" }}
                 whileTap={{ scale: 0.95 }}
               >
                 <div className="absolute inset-0 flex items-center justify-center text-primary">
-                  <span className="text-lg font-bold">B&B</span>
+                  {/* <span className="text-lg font-bold">B&B</span> */}
+                  <Image
+                    src={bullLogo}
+                    height={900}
+                    width={900}
+                    alt="Bulls & Bears Logo"
+                    className="object-cover"
+                    priority
+                  />
                 </div>
                 <motion.div className="absolute inset-0 bg-primary/10 opacity-0" whileHover={{ opacity: 1 }} />
               </motion.div>
@@ -76,21 +85,20 @@ export default function Header() {
             {navItems.map((item, index) => (
               <Link key={item.name} href={item.href}>
                 <motion.div
-                  className={`relative px-6 py-3 rounded-lg ${
-                    isActive(item.href)
-                      ? "bg-background/80 text-foreground shadow-md"
-                      : "bg-background/40 text-foreground/70"
-                  } backdrop-blur-sm transition-colors hover:bg-background/60 hover:text-foreground`}
+                  className={`relative px-6 py-3 rounded-lg ${isActive(item.href)
+                    ? "bg-background/80 text-foreground shadow-md"
+                    : "bg-background/40 text-foreground/70"
+                    } backdrop-blur-sm transition-colors hover:bg-background/60 hover:text-foreground`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   animate={{
                     y: [0, 3, 0],
                     boxShadow: isActive(item.href)
                       ? [
-                          "0 4px 12px rgba(245, 158, 11, 0.1)",
-                          "0 6px 16px rgba(245, 158, 11, 0.2)",
-                          "0 4px 12px rgba(245, 158, 11, 0.1)",
-                        ]
+                        "0 4px 12px rgba(245, 158, 11, 0.1)",
+                        "0 6px 16px rgba(245, 158, 11, 0.2)",
+                        "0 4px 12px rgba(245, 158, 11, 0.1)",
+                      ]
                       : ["none", "none", "none"],
                   }}
                   transition={{
@@ -120,9 +128,8 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors duration-300 ${
-                    isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-foreground"
-                  }`}
+                  className={`text-sm font-medium transition-colors duration-300 ${isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-foreground"
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -155,9 +162,8 @@ export default function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`block py-2 transition-colors ${
-                      isActive(item.href) ? "text-primary font-medium" : "text-foreground/80 hover:text-foreground"
-                    }`}
+                    className={`block py-2 transition-colors ${isActive(item.href) ? "text-primary font-medium" : "text-foreground/80 hover:text-foreground"
+                      }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}

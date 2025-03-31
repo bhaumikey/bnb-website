@@ -5,22 +5,22 @@ import { motion } from "framer-motion"
 
 const milestones = [
   {
-    year: "2015",
+    year: "2018",
     title: "Club Foundation",
     description:
       "Bulls & Bears was founded by a group of finance enthusiasts at PDEU with the vision of promoting financial literacy among students.",
   },
   {
-    year: "2016",
-    title: "First Trading Competition",
+    year: "2018",
+    title: "First Event",
     description:
-      "Launched our first virtual stock trading competition with 50 participants, establishing what would become our signature event.",
+      "First ever event was hosted to introduce students to the basics of stock trading and investment strategies. And the event was conducted by Mr. Aakash Soni.",
   },
   {
     year: "2018",
-    title: "Inaugural Finance Summit",
+    title: "First Bazaar",
     description:
-      "Organized the first annual Finance Summit, featuring industry speakers and workshops that attracted over 200 attendees.",
+      "This was our first main flagship event in which the student need to invest according news given to them and then need to analyze the news and invest accordingly which was held on 18th of november.",
   },
   {
     year: "2020",

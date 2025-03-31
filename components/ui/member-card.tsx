@@ -4,11 +4,12 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { LinkedinIcon, InstagramIcon } from "lucide-react"
+import { StaticImageData } from "next/image"
 
 interface MemberCardProps {
   name: string
   position: string
-  image: string
+  image: string | StaticImageData
   bio: string
   linkedin?: string
   instagram?: string
@@ -36,7 +37,7 @@ export default function MemberCard({ name, position, image, bio, linkedin, insta
           <div className="flex h-full flex-col items-center justify-center p-6 text-center">
             <div className="mb-4 h-40 w-40 overflow-hidden rounded-full shadow-lg">
               <img
-                src={image || "/placeholder.svg"}
+                src={typeof image === "string" ? image : image.src || "/placeholder.svg"}
                 alt={name}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

@@ -151,7 +151,7 @@ export default function HeroSection() {
               Empowering students with financial knowledge and market insights
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button
+              {/* <Button
                 size="lg"
                 className="bg-amber-600 hover:bg-amber-700 transition-all duration-300 hover:shadow-lg hover:shadow-amber-600/20"
               >
@@ -162,8 +162,8 @@ export default function HeroSection() {
                 variant="outline"
                 className="border-teal-700 text-teal-700 hover:bg-teal-700/10 dark:border-teal-500 dark:text-teal-500 transition-all duration-300"
               >
-                Learn More
-              </Button>
+                Learn More agdvga
+              </Button> */}
             </div>
           </motion.div>
         </div>

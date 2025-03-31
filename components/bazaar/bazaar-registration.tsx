@@ -67,6 +67,7 @@ export default function BazaarRegistration() {
           className="mb-12 text-center"
         >
           <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">Register for Bazaar</h2>
+          <h4 className="mb-4 text-xl font-semibold tracking-tight md:text-2xl">Registration is closed righnow it will be open during the tesseract</h4>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
             Secure your spot at the most anticipated finance event of the year
           </p>
@@ -176,7 +177,6 @@ export default function BazaarRegistration() {
                       <option value="2">Second Year</option>
                       <option value="3">Third Year</option>
                       <option value="4">Fourth Year</option>
-                      <option value="5">Fifth Year</option>
                       <option value="pg">Postgraduate</option>
                     </select>
                   </div>
@@ -210,7 +210,7 @@ export default function BazaarRegistration() {
                   </Button>
 
                   <p className="text-center text-xs text-muted-foreground">
-                    By registering, you agree to our terms and conditions. Registration fee: ₹300 per person.
+                    By registering, you agree to our terms and conditions. Registration fee: ₹50 per person.
                   </p>
                 </form>
               )}
