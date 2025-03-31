@@ -53,8 +53,8 @@ import Shoury from "@/public/B&B_Photos/Shoury Mishra.jpg"
 import Yuvraj from "@/public/B&B_Photos/Yuvraj Patel.jpg"
 import Ved from "@/public/B&B_Photos/Ved Patel.jpg"
 import Bhumi from "@/public/B&B_Photos/BhumiShah.jpg"
-import Jhil from "@/public/B&B_Photos/Jhil mandavia.jpg"
-import AayushiP from "@/public/B&B_Photos/Aayushi patel.jpg"
+import Jhil from "@/public/B&B_Photos/Jhil Mandavia.jpg"
+import AayushiP from "@/public/B&B_Photos/Aayushi Patel.jpg"
 
 // Define departments
 const departments = [
@@ -110,7 +110,7 @@ const subcommitteeMembers = {
       flip: false,
     },
     {
-      name: "Smit Joshi", 
+      name: "Smit Joshi",
       position: "",
       image: Smit,
       flip: false,
@@ -324,7 +324,7 @@ const subcommitteeMembers = {
       flip: false,
     },
     {
-      name: "Siya Gandhi", 
+      name: "Siya Gandhi",
       position: "",
       image: "Siya",
       flip: false,
