@@ -6,229 +6,526 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+//bazaar
+import event1 from "@/public/events/Bazaar/Photo1.jpg";
+import event2 from "@/public/events/Bazaar/Photo2.jpg";
+import event3 from "@/public/events/Bazaar/Photo3.jpg";
+import event4 from "@/public/events/Bazaar/Photo4.jpg";
+import event5 from "@/public/events/Bazaar/Photo5.jpg";
+import event6 from "@/public/events/Bazaar/Photo6.jpg";
+import event7 from "@/public/events/Bazaar/Photo7.jpg";
+import event8 from "@/public/events/Bazaar/Photo8.jpg";
+import event9 from "@/public/events/Bazaar/Photo9.jpg";
+import event10 from "@/public/events/Bazaar/Photo10.jpg";
+//blueprint
+import event11 from "@/public/events/Budget_b/Photo1.jpg";
+import event12 from "@/public/events/Budget_b/Photo2.jpg";
+import event13 from "@/public/events/Budget_b/Photo3.jpg";
+import event14 from "@/public/events/Budget_b/Photo4.jpg";
+import event15 from "@/public/events/Budget_b/Photo5.jpg";
+import event16 from "@/public/events/Budget_b/Photo6.jpg";
+import event17 from "@/public/events/Budget_b/Photo7.jpg";
+import event18 from "@/public/events/Budget_b/Photo8.jpg";
+import event19 from "@/public/events/Budget_b/Photo9.jpg";
+import event20 from "@/public/events/Budget_b/Photo10.jpg";
+
+//cash ki kahani
+import event21 from "@/public/events/Cash_kk/IMG_7850.jpg";
+import event22 from "@/public/events/Cash_kk/IMG_7860.jpg";
+import event23 from "@/public/events/Cash_kk/IMG_7866.jpg";
+import event24 from "@/public/events/Cash_kk/IMG_7875.jpg";
+import event25 from "@/public/events/Cash_kk/IMG_7888.jpg";
+
+//hisab kitab
+import event26 from "@/public/events/Hisab_k/20250322_140659.jpg";
+import event27 from "@/public/events/Hisab_k/20250322_141459.jpg";
+import event28 from "@/public/events/Hisab_k/20250322_142953.jpg";
+import event29 from "@/public/events/Hisab_k/20250322_143417.jpg";
+import event30 from "@/public/events/Hisab_k/20250322_153935.jpg";
+import event31 from "@/public/events/Hisab_k/20250322_160854.jpg";
+import event32 from "@/public/events/Hisab_k/20250322_161353.jpg";
+
+//seven stones
+import event33 from "@/public/events/7S/20250124_164246.jpg";
+import event34 from "@/public/events/7S/20250124_164521.jpg";
+import event35 from "@/public/events/7s/20250124_164620.jpg";
+import event36 from "@/public/events/7S/20250124_164659.jpg";
+import event37 from "@/public/events/7S/20250124_164912.jpg";
+
+//money bubble ya double
+import event38 from "@/public/events/MDYB/IMG_0012.jpg";
+import event39 from "@/public/events/MDYB/IMG_0387.jpg";
+import event40 from "@/public/events/MDYB/IMG_0390.jpg";
+import event41 from "@/public/events/MDYB/IMG_0394.jpg";
+import event42 from "@/public/events/MDYB/IMG_0398.jpg";
+import event43 from "@/public/events/MDYB/IMG_0399.jpg";
+import event44 from "@/public/events/MDYB/IMG_0426.jpg";
+import event45 from "@/public/events/MDYB/IMG_0437.jpg";
+
+
+
+
 const galleryImages = [
+  //bazaar
+  // {
+  //   src: "https://i.ibb.co/0yJLhf8C/Photo1.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/VW7gDnKG/Photo2.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/23TGthBL/Photo3.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/67v8wjbq/Photo4.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/ZzmYjzXT/Photo5.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/r24tJSkT/Photo6.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/dJGbZG3n/Photo7.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/mCbhyqcJ/Photo8.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/27bPYSdQ/Photo9.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/Dftb0d3b/Photo10.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // //budget blueprint
+  // {
+  //   src: "https://i.ibb.co/N2DqmJqR/Photo1.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/twRQqQhV/Photo2.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/zWjjtYdN/Photo3.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/LXPNKMpS/Photo4.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/WvSd1sCF/Photo5.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/chBxhgQb/Photo6.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/x8KV5gXx/Photo7.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/RpWvx5LH/Photo8.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/Mx4r0X5Q/Photo9.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // {
+  //   src: "https://i.ibb.co/gLmRRF8M/Photo10.jpg",
+  //   alt: "Networking session",
+  //   category: "Networking",
+  // },
+  // //cash ki kahani
+  // {
+  //   src: "https://i.ibb.co/0jMYkSf0/IMG-7850.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/CKMs9jZb/IMG-7860.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/qMmjs3zw/IMG-7866.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/ZR7Vz8vn/IMG-7875.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/FLhk0hxZ/IMG-7888.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // //hisab kitab
+  // {
+  //   src: "https://i.ibb.co/cWdX3RZ/20250322-140659.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/gLMmV4XT/20250322-141459.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/S4ZGqsJy/20250322-142953.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/RTw4dC5T/20250322-143417.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/zVLqD10x/20250322-153935.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/jPqgqvxp/20250322-160854.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // {
+  //   src: "https://i.ibb.co/Hf19D7GL/20250322-161353.jpg",
+  //   alt: "Guest lecture",
+  //   category: "Workshop",
+  // },
+  // //seven stones
+  // {
+  //   src: "https://i.ibb.co/NPcwCLL/20250124-164246.jpg",
+  //   alt: "Finance fun keynote speaker",
+  //   category: "fun",
+  // },
+  // {
+  //   src: "https://i.ibb.co/23yPSRyN/20250124-164521.jpg",
+  //   alt: "Finance fun keynote speaker",
+  //   category: "fun",
+  // },
+  // {
+  //   src: "https://i.ibb.co/1GpqHw5j/20250124-164620.jpg",
+  //   alt: "Finance fun keynote speaker",
+  //   category: "fun",
+  // },
+  // {
+  //   src: "https://i.ibb.co/W4wtSR8B/20250124-164659.jpg",
+  //   alt: "Finance fun keynote speaker",
+  //   category: "fun",
+  // },
+  // {
+  //   src: "https://i.ibb.co/cSsr5v1x/20250124-164912.jpg",
+  //   alt: "Finance fun keynote speaker",
+  //   category: "fun",
+  // },
+  // //money bubble ya double
+  // {
+  //   src: "https://i.ibb.co/23GRHMCc/IMG-0012.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/LXcFWk4d/IMG-0387.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/cSXBX7qk/IMG-0390.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/zWZmVkq0/IMG-0394.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/Xff2Qv81/IMG-0398.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/604HC74x/IMG-0399.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/3YGBxxQ8/IMG-0426.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+  // {
+  //   src: "https://i.ibb.co/KcQMsVhD/IMG-0437.jpg",
+  //   alt: "Competition participants",
+  //   category: "Competition",
+  // },
+
+  //bazaar
   {
-    src: "https://i.ibb.co/NPcwCLL/20250124-164246.jpg",
+    src: event1,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event2,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event3,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event4,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event5,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event6,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event7,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event8,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event9,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  {
+    src: event10,
+    alt: "Competition participants",
+    category: "Competition",
+  },
+  //blueprint
+  {
+    src: event11,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event12,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event13,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event14,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event15,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event16,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event17,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event18,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event19,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  {
+    src: event20,
+    alt: "Networking session",
+    category: "Networking",
+  },
+  //cash ki kahani
+  {
+    src: event21,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event22,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event23,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event24,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event25,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  //hisab kitab
+  {
+    src: event26,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event27,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event28,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event29,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event30,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event31,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  {
+    src: event32,
+    alt: "Guest lecture",
+    category: "Workshop",
+  },
+  //seven stones  
+  {
+    src: event33,
     alt: "Finance fun keynote speaker",
-    category: "fun",
+    category: "Fun",
   },
   {
-    src: "https://i.ibb.co/23yPSRyN/20250124-164521.jpg",
+    src: event34,
     alt: "Finance fun keynote speaker",
-    category: "fun",
+    category: "Fun",
   },
   {
-    src: "https://i.ibb.co/1GpqHw5j/20250124-164620.jpg",
+    src: event35,
     alt: "Finance fun keynote speaker",
-    category: "fun",
+    category: "Fun",
   },
   {
-    src: "https://i.ibb.co/W4wtSR8B/20250124-164659.jpg",
+    src: event36,
     alt: "Finance fun keynote speaker",
-    category: "fun",
+    category: "Fun",
   },
   {
-    src: "https://i.ibb.co/cSsr5v1x/20250124-164912.jpg",
+    src: event37,
     alt: "Finance fun keynote speaker",
-    category: "fun",
+    category: "Fun",
   },
+  //money bubble ya double
   {
-    src: "https://i.ibb.co/0yJLhf8C/Photo1.jpg",
+    src: event38,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/VW7gDnKG/Photo2.jpg",
+    src: event39,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/23TGthBL/Photo3.jpg",
+    src: event40,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/67v8wjbq/Photo4.jpg",
+    src: event41,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/ZzmYjzXT/Photo5.jpg",
+    src: event42,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/r24tJSkT/Photo6.jpg",
+    src: event43,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/dJGbZG3n/Photo7.jpg",
+    src: event44,
     alt: "Competition participants",
     category: "Competition",
   },
   {
-    src: "https://i.ibb.co/mCbhyqcJ/Photo8.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/27bPYSdQ/Photo9.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/Dftb0d3b/Photo10.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/N2DqmJqR/Photo1.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/twRQqQhV/Photo2.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/zWjjtYdN/Photo3.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/LXPNKMpS/Photo4.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/WvSd1sCF/Photo5.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/chBxhgQb/Photo6.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/x8KV5gXx/Photo7.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/RpWvx5LH/Photo8.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/Mx4r0X5Q/Photo9.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/gLmRRF8M/Photo10.jpg",
-    alt: "Networking session",
-    category: "Networking",
-  },
-  {
-    src: "https://i.ibb.co/0jMYkSf0/IMG-7850.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/CKMs9jZb/IMG-7860.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/qMmjs3zw/IMG-7866.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/ZR7Vz8vn/IMG-7875.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/FLhk0hxZ/IMG-7888.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/cWdX3RZ/20250322-140659.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/gLMmV4XT/20250322-141459.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/S4ZGqsJy/20250322-142953.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/RTw4dC5T/20250322-143417.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/zVLqD10x/20250322-153935.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/jPqgqvxp/20250322-160854.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/Hf19D7GL/20250322-161353.jpg",
-    alt: "Guest lecture",
-    category: "Workshop",
-  },
-  {
-    src: "https://i.ibb.co/23GRHMCc/IMG-0012.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/LXcFWk4d/IMG-0387.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/cSXBX7qk/IMG-0390.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/zWZmVkq0/IMG-0394.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/Xff2Qv81/IMG-0398.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/604HC74x/IMG-0399.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/3YGBxxQ8/IMG-0426.jpg",
-    alt: "Competition participants",
-    category: "Competition",
-  },
-  {
-    src: "https://i.ibb.co/KcQMsVhD/IMG-0437.jpg",
+    src: event45,
     alt: "Competition participants",
     category: "Competition",
   },
@@ -325,7 +622,7 @@ export default function EventGallerySection() {
           >
             <LazyLoadImage
               threshold={300}
-              src={featuredImages[currentSlide].src}
+              src={featuredImages[currentSlide].src.src}
               alt={featuredImages[currentSlide].alt}
               className="w-full h-full object-cover"
               loading="lazy"
@@ -424,7 +721,7 @@ export default function EventGallerySection() {
               >
                 <LazyLoadImage
                   threshold={300}
-                  src={image.src}
+                  src={image.src.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500"
                   loading="lazy"
@@ -505,7 +802,7 @@ export default function EventGallerySection() {
             >
               <LazyLoadImage
                 threshold={300}
-                src={filteredImages[selectedImage].src}
+                src={filteredImages[selectedImage].src.src}
                 alt={filteredImages[selectedImage].alt}
                 className="max-h-[80vh] rounded-lg object-contain shadow-xl"
                 loading="lazy"
