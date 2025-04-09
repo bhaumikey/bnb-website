@@ -17,7 +17,7 @@ const events = [
     date: "March 22, 2025",
     description:
       "A financial literacy initiative in collaboration with Rotaract, empowering security guards, helpers, and support staff with essential knowledge on managing finances, investing wisely, avoiding scams, and accessing beneficial schemes.",
-    image: hisabkitab,
+    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744217184/Hisaab_Kitaab_1_znhaf9.png",
     attendees: "75+",
     highlights: ["Industry expert keynotes", "Career fair", "Networking opportunities"],
   },
@@ -25,7 +25,7 @@ const events = [
     title: "Paisa Double ya Bubble",
     date: "March 21, 2025",
     description: "A strategic finance game where participants analyze how different sectors react to news and economic changes. Understand past trends, evaluate market performance, and uncover the impact of news on investments.",
-    image: pdyb,
+    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744216830/Paisa_double_ya_bubble_1_erzgwj.png",
     attendees: "50+",
     highlights: ["Hands-on trading simulation", "understanding basics", "DeFi exploration","easy trading"],
   },
@@ -34,7 +34,7 @@ const events = [
     date: "Octomber 20, 2024",
     description:
       "Navigate through a market crash! Make strategic decisions to minimize losses and emerge as the most resilient investor.",
-    image: cc,
+    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744217319/Crisis_Compass_Poster_yjhtrt.png",
     attendees: "60+",
     highlights: [ "Real-time market data", "Expert mentoring", "protection of assets", "strategic decision making"],
   },
