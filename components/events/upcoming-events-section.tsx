@@ -14,7 +14,7 @@ const upcomingEvents = [
     time: "4:00 PM - 6:00 PM",
     location: "TBA",
     description: "Learn the basics of personal finance, budgeting, and investment strategies for college students.",
-    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744217375/Bulls_Bears_oebvgz.jpg",
+    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744223443/hxyhgmzgernbedlrq2d3.jpg",
     capacity: "100 seats",
     registrationOpen: false,
   },
