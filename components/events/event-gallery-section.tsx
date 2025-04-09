@@ -48,7 +48,7 @@ import event32 from "@/public/events/Hisab_k/20250322_161353.jpg";
 //seven stones
 import event33 from "@/public/events/7S/20250124_164246.jpg";
 import event34 from "@/public/events/7S/20250124_164521.jpg";
-import event35 from "@/public/events/7s/20250124_164620.jpg";
+// import event35 from "@/public/events/7s/20250124_164620.jpg";
 import event36 from "@/public/events/7S/20250124_164659.jpg";
 import event37 from "@/public/events/7S/20250124_164912.jpg";
 
@@ -474,7 +474,7 @@ const galleryImages = [
     category: "Fun",
   },
   {
-    src: event35,
+    src: "event35",
     alt: "Finance fun keynote speaker",
     category: "Fun",
   },
