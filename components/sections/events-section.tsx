@@ -86,6 +86,8 @@ export default function EventsSection() {
                   whileHover={{ scale: 1.03 }}
                 >
                   <Image
+                    width={500}
+                    height={500}
                     src={event.image || "/placeholder.svg"}
                     alt={event.title}
                     className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"

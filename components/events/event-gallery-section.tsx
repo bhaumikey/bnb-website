@@ -622,7 +622,7 @@ export default function EventGallerySection() {
               // threshold={300}
               width={400}
               height={400}
-              src={featuredImages[currentSlide].src.src}
+              src={featuredImages[currentSlide].src}
               alt={featuredImages[currentSlide].alt}
               className="w-full h-full object-cover"
               loading="lazy"
@@ -719,9 +719,10 @@ export default function EventGallerySection() {
                 transition={{ duration: 0.3 }}
                 className="aspect-square"
               >
-                <LazyLoadImage
-                  threshold={300}
-                  src={image.src.src}
+                <Image
+                  width={400}
+                  height={400}
+                  src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500"
                   loading="lazy"
@@ -800,9 +801,10 @@ export default function EventGallerySection() {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-              <LazyLoadImage
-                threshold={300}
-                src={filteredImages[selectedImage].src.src}
+              <Image
+                width={400}
+                height={400}
+                src={filteredImages[selectedImage].src}
                 alt={filteredImages[selectedImage].alt}
                 className="max-h-[80vh] rounded-lg object-contain shadow-xl"
                 loading="lazy"
