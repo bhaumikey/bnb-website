@@ -461,7 +461,7 @@ const galleryImages = [
     src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744217943/IMG_0437_mqyw2m.jpg",
     alt: "Competition participants",
     category: "Competition",
-  },
+  }
 ];
 
 export default galleryImages;

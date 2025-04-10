@@ -46,7 +46,7 @@ export default function ContactHero() {
           >
             <div className="relative h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744307497/ChatGPT_Image_Apr_10_2025_11_20_20_PM_cny5wa.png?height=400&width=600"
                 alt="Contact Bulls & Bears"
                 fill
                 className="object-cover"

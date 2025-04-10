@@ -12,11 +12,11 @@ import YatriPatel from "@/public/B&B_Photos/Yatri Patel.jpg";
 import MohitGurnani from "@/public/B&B_Photos/Mohit Gurnani.jpg";
 import AryaShah from "@/public/B&B_Photos/Arya Shah.jpg";
 import DeepMathukiya from "@/public/B&B_Photos/Deep Mathukiya.jpg";
-//import DhruvMaradiya from "@/public/B&B_Photos/Dhruv Maradiya.jpg";
-//import ArnavDixit from "@/public/B&B_Photos/Arnav Dixit.jpg";
+import DhruvMaradiya from "@/public/B&B_Photos/dhruvm.jpeg";
+import ArnavDixit from "@/public/B&B_Photos/Arnav Dixit.jpg";
 import MohnishPathak from "@/public/B&B_Photos/Mohnish Pathak.jpg";
 import RajShah from "@/public/B&B_Photos/Raj Shah.jpg";
-//import DeepSinghala from "@/public/B&B_Photos/Deep Singhala.jpg";
+import DeepSinghala from "@/public/B&B_Photos/Deep Shingala.jpg";
 
 const departmentHeads = [
   {
@@ -62,7 +62,7 @@ const departmentHeads = [
   {
     name: "Dhruv Maradiya",
     position: "Head of Tech & IT",
-    image: "DhruvMaradiya",
+    image: DhruvMaradiya,
     bio: "Innovation in fintech is revolutionizing how financial markets operate. He develops systems that enhance decision-making, using predictive analytics, automation, and smart algorithms. His work involves refining data processing, optimizing trading platforms, and ensuring that technological advancements lead to smarter, more informed investment strategies in an evolving financial landscape.",
     linkedin: "http://linkedin.com/in/dhruvmaradiya/",
     //instagram: "https:////instagram.com",
@@ -70,7 +70,7 @@ const departmentHeads = [
   {
     name: "Arnav Dixit",
     position: "Head of Graphic Design",
-    image: "ArnavDixit",
+    image: ArnavDixit,
     bio: "Financial concepts become powerful when visually represented with clarity. His designs simplify complex data, ensuring that trends, statistics, and analyses are easily understood. By merging creativity with financial knowledge, he creates compelling visual stories that make market insights engaging, accessible, and insightful for a broader audience.",
     linkedin: "https://www.linkedin.com/in/arnav-dixitt/",
     //instagram: "https:////instagram.com",
@@ -94,7 +94,7 @@ const departmentHeads = [
   {
     name: "Deep Singhala",
     position: "Head of Sponsorships",
-    image: "DeepSinghala",
+    image: DeepSinghala,
     bio: "Sponsorships are strategic investments, not just financial contributions. He builds valuable partnerships by aligning business interests with financial incentives. His expertise lies in structuring deals that provide mutual benefits, securing long-term collaborations that contribute to both market presence and economic stability for all parties involved.",
     //instagram: "https:////instagram.com",
   },

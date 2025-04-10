@@ -31,7 +31,7 @@ export default function AboutHero() {
             className="relative"
           >
             <div className="relative h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/about-hero.jpg" alt="Bulls & Bears Team" fill className="object-cover" priority />
+              <Image src="https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744306643/about_us_o2hht8.jpg" alt="Bulls & Bears Team" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 to-transparent"></div>
             </div>
 

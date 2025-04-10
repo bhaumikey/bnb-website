@@ -30,7 +30,7 @@ export default function TeamHero() {
             className="relative"
           >
             <div className="relative h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
-              <Image src="/images/team-hero.jpg" alt="Bulls & Bears Team" fill className="object-cover" priority />
+              <Image src="https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744224621/ztc4aa6desgnmxftyfrl.png" alt="Bulls & Bears Team" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 to-transparent"></div>
             </div>
 
@@ -54,7 +54,7 @@ export default function TeamHero() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Team Members</p>
-                  <p className="font-medium text-amber-600">20+ Members</p>
+                  <p className="font-medium text-amber-600">50+ Members</p>
                 </div>
               </div>
             </motion.div>
@@ -78,7 +78,7 @@ export default function TeamHero() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Departments</p>
-                  <p className="font-medium text-teal-600">6 Specialized Teams</p>
+                  <p className="font-medium text-teal-600">8 Specialized Teams</p>
                 </div>
               </div>
             </motion.div>

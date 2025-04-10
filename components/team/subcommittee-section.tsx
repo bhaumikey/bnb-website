@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"
 import { motion, AnimatePresence } from "framer-motion"
 import TeamMemberCard from "@/components/team/team-member-card"
 import Image from 'next/image'
-
+import siyag from "@/public/B&B_Photos/siyag.jpg"
 import Bhaumik from "@/public/B&B_Photos/BhaumikPatel.jpg"
 import Soham from "@/public/B&B_Photos/Soham Borsadiya.jpg"
 import Yug from "@/public/B&B_Photos/Yug Prajapati.jpg"
@@ -17,10 +17,13 @@ import Kasundra from "@/public/B&B_Photos/Donnakasundra.jpg"
 import Pratham from "@/public/B&B_Photos/Pratham Mehta.jpg"
 import Aashvi from "@/public/B&B_Photos/Aashvi Padhiyar.jpg"
 import Deep from "@/public/B&B_Photos/Deep Mathukiya.jpg"
-//import DeepS form "@/public/B&B_Photos/Deep Shingala.jpg"
+import laksh from "@/public/B&B_Photos/Laksh Baldaniya.jpg"
+import shanay from "@/public/B&B_Photos/ShanayV.jpg"
+import shaurya from "@/public/B&B_Photos/Shaurya Khandelwal.jpg"
+
 import Paril from "@/public/B&B_Photos/Paril Paladiya.jpg"
 import Drashti from "@/public/B&B_Photos/Drashti Master.jpg"
-//import Neil from "@/public/B&B_Photos/Neil Gandhi.jpg"
+
 import Nishu from "@/public/B&B_Photos/Nishu Shukla.jpg"
 import Dhruvina from "@/public/B&B_Photos/Rathod Dhruvina.jpg"
 import Anand from "@/public/B&B_Photos/Anand Zanzmeriya.jpg"
@@ -28,10 +31,10 @@ import Suribhi from "@/public/B&B_Photos/SuribhiYadav.jpg"
 import AayushiS from "@/public/B&B_Photos/Aayushi Shah.jpg"
 import Daksh from "@/public/B&B_Photos/dakshMathus.jpg"
 import Anshul from "@/public/B&B_Photos/AnshulBhatt.jpg"
-//import DeepS from "@/public/B&B_Photos/Deep Shingala.jpg"
+
 import Harsh from "@/public/B&B_Photos/Harsh Patil.jpg"
 import Karan from "@/public/B&B_Photos/Karan Boda.jpeg"
-//import Muskan from "@/public/B&B_Photos/Muskan Goplani.jpg"
+
 import Gaurika from "@/public/B&B_Photos/Gaurika Soni.jpg"
 import Ishaan from "@/public/B&B_Photos/Ishaan Kathiriya.jpg"
 import Pritesh from "@/public/B&B_Photos/Pritesh Patel.jpg"
@@ -58,6 +61,8 @@ import AayushiP from "@/public/B&B_Photos/Aayushi Patel.jpg"
 import DiyaP from "@/public/B&B_Photos/DIya Pat.jpg"
 import KalpD from "@/public/B&B_Photos/Kalp D.jpeg"
 import Helish from  "@/public/B&B_Photos/Helish P.jpeg"
+import Hetvi from "@/public/B&B_Photos/hetvi makadiya.jpeg"
+import aryan from "@/public/B&B_Photos/aryan amin.jpeg"
 
 
 // Define departments
@@ -125,12 +130,12 @@ const subcommitteeMembers = {
       image: AnshulB,
       flip: false,
     },
-    {
-      name: "Neil Gandhi",
-      position: "",
-      image: "Neil",
-      flip: false,
-    },
+    // {
+    //   name: "Neil Gandhi",
+    //   position: "",
+    //   image: "Neil",
+    //   flip: false,
+    // },
     {
       name: "Darshil Shah",
       position: "",
@@ -141,74 +146,68 @@ const subcommitteeMembers = {
   "Event Management": [
     {
       name: "Chelshi Tank",
-      position: "Equity Research Analyst",
+      //position: "Equity Research Analyst",
       image: Tank,
       flip: false,
     },
     {
       name: "Donna Kasundra",
-      position: "",
+      //position: "",
       image: Kasundra,
       flip: false,
     },
     {
       name: "Suribhi Yadav",
-      position: "",
+      //position: "",
       image: Suribhi,
       flip: false,
     },
     {
       name: "Dhruvina Rathod",
-      position: "",
+      //position: "",
       image: Dhruvina,
       flip: false,
     },
     {
       name: "Pratham Mehta",
-      position: "",
+      //position: "",
       image: Pratham,
       flip: false,
     },
     {
       name: "Pritesh Patel",
-      position: "",
+      //position: "",
       image: Pritesh,
       flip: false,
     },
     {
       name: "Aaryan Amin",
-      position: "",
-      image: "Aaryan",
-      flip: false,
-    },
-    {
-      name: "Pratham Magnani",
-      position: "",
-      image: "Pratham",
+      //position: "",
+      image: aryan,
       flip: false,
     },
     {
       name: "Hetvi Makadiya",
-      position: "",
-      image: "Hetvi",
+      //position: "",
+      image: Hetvi,
       flip: false,
     },
     {
       name: "Ved Patel",
-      position: "",
+      //position: "",
       image: Ved,
       flip: false,
     },
     {
       name: "Bhumi Shah",
-      position: "",
+      //position: "",
       image: Bhumi,
       flip: false,
     },
     {
       name: "Shanay Vyas",
       position: "",
-      image: "Shanay",
+      image: shanay,
       flip: false,
     },
   ],
@@ -219,12 +218,12 @@ const subcommitteeMembers = {
       image: Anand,
       flip: false,
     },
-    {
-      name: "Muskan Goplani",
-      position: "",
-      image: "Muskan",
-      flip: false,
-    },
+    // {
+    //   name: "Muskan Goplani",
+    //   position: "",
+    //   image: "Muskan",
+    //   flip: false,
+    // },
     {
       name: "Karan Boda Patel",
       position: "",
@@ -237,24 +236,24 @@ const subcommitteeMembers = {
       image: Daksh,
       flip: false,
     },
-    {
-      name: "Ishita Shah",
-      position: "",
-      image: "Ishita",
-      flip: false,
-    },
+    // {
+    //   name: "Ishita Shah",
+    //   position: "",
+    //   image: "Ishita",
+    //   flip: false,
+    // },
   ],
   Marketing: [
     {
       name: "Shaurya Khandelwal",
       position: "",
-      image: "Shaurya",
+      image: shaurya,
       flip: false,
     },
     {
       name: "Lakshya Baldaniya",
       position: "",
-      image: "Lakshya",
+      image: laksh,
       flip: false,
     },
     {
@@ -269,12 +268,7 @@ const subcommitteeMembers = {
       image: KalpD,
       flip: false,
     },
-    {
-      name: "Pinal Samani",
-      position: "",
-      image: "Pinal",
-      flip: false,
-    },
+    
     {
       name: "Jhil Mandavia",
       position: "",
@@ -287,12 +281,7 @@ const subcommitteeMembers = {
       image: DiyaP,
       flip: false,
     },
-    {
-      name: "Aaditya Gupta",
-      position: "",
-      image: "Aaditya",
-      flip: false,
-    },
+    
   ],
   "Graphic Design": [
     {
@@ -330,7 +319,7 @@ const subcommitteeMembers = {
     {
       name: "Siya Gandhi",
       position: "",
-      image: "Siya",
+      image: siyag,
       flip: false,
     },
     {
@@ -353,12 +342,7 @@ const subcommitteeMembers = {
       image: Harsh,
       flip: false,
     },
-    {
-      name: "Yug Prajapati",
-      position: "",
-      image: Yug,
-      flip: false,
-    },
+    
     {
       name: "Dhruv Jegoda",
       position: "",
@@ -368,7 +352,7 @@ const subcommitteeMembers = {
     {
       name: "Yug T",
       position: "",
-      image: "YugT",
+      image: Yug,
       flip: false,
     },
   ],

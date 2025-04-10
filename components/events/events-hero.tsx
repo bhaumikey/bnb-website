@@ -105,7 +105,7 @@ export default function EventsHero() {
           >
             <div className="relative h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744224621/ztc4aa6desgnmxftyfrl.png"
+                src="https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744309405/Screenshot_2025-04-10_at_11.53.01_PM_mrwm0g.png"
                 alt="Bulls & Bears Events"
                 fill
                 className="object-cover"

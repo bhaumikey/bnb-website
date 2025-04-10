@@ -4,9 +4,9 @@ import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import TeamMemberCard from "@/components/team/team-member-card"
 import VishvaGandhi from "@/public/B&B_Photos/Vishva Gandhi.jpg";
-//import AashiLalwala from "@/public/B&B_Photos/Aashi Lalwala.jpg";
+import AashiLalwala from "@/public/B&B_Photos/ashi.jpg";
 import KartikAkbari from "@/public/B&B_Photos/Kartik Akbari.jpg";
-//import RidhamShah from "@/public/B&B_Photos/Ridham Shah.jpg";
+import RidhamShah from "@/public/B&B_Photos/ridham shah.jpg";
 
 import { ArrowBigUpDashIcon } from "lucide-react";
 
@@ -22,7 +22,7 @@ const coreMembers = [
   {
     name: "Ashi Lalwala",
     position: "vice President",
-    image: "AashiLalwala",
+    image: AashiLalwala,
     bio: "Every financial decision is a calculated move in a long-term game. Her expertise lies in strategic financial planning, ensuring that short-term noise never overshadows sustainable growth. She focuses on adaptability, innovation, and resilience, using data-driven insights to craft robust investment approaches that withstand economic cycles.",
     linkedin: "https://www.linkedin.com/in/ashi-lalwala-657999297/",
     //instagram: "https:////instagram.com",
@@ -38,7 +38,7 @@ const coreMembers = [
   {
     name: "Ridham Shah",
     position: "Treasurer",
-    image: "RidhamShah",
+    image: RidhamShah,
     bio: "Financial discipline is the foundation of wealth creation. He ensures that structured financial management and prudent risk-taking are at the core of every decision. His focus is on optimizing resources, balancing liquidity, and capitalizing on sustainable investment opportunities that generate long-term financial stability while mitigating unnecessary exposure.",
     //linkedin: "https://linkedin.com",
     //instagram: "https:////instagram.com",
