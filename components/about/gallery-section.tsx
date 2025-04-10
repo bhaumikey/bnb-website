@@ -434,31 +434,112 @@ const galleryImages = [
     alt: "Guest lecture by industry expert",
     category: "Events",
   },
-  {
-    src: "https://i.ibb.co/gMC3DzMb/FE1101-D7-1-CDD-4-A1-E-9-D03-F12415-D473-F8.jpg",
-    alt: "Club members at networking event",
-    category: "Team",
-  },
-  {
-    src: "https://i.ibb.co/gMC3DzMb/FE1101-D7-1-CDD-4-A1-E-9-D03-F12415-D473-F8.jpg",
-    alt: "Leadership planning session",
-    category: "Team",
-  },
+  
+  //new field images
   {
     src: "https://i.ibb.co/gMC3DzMb/FE1101-D7-1-CDD-4-A1-E-9-D03-F12415-D473-F8.jpg",
     alt: "Team building activity",
     category: "Team",
   },
+
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Panel discussion on market trends",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311668/t3_w7hdyg.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311668/t2_foanee.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311668/t5_fucstr.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311669/t_eykzqt.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311669/t8_r0j9sv.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311670/t7_bkxqv1.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311673/t10_fy1el2.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311673/t9_eqzhgn.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311674/t4_rodznw.jpg",
+    alt: "Team building activity",
+    category: "Team",
+  },
+
+  //new from events
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311670/e1_myzyue.jpg",
+    alt: "Team photo at Annual Finance Summit",
     category: "Events",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Team building retreat",
-    category: "Team",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311668/e2_uyvpmm.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
   },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311670/e3_ixeu91.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311674/e4_xbneeo.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311669/e5_epkprb.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311671/e6_wfpf5y.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311669/e7_ciftqt.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
+  },
+  {
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311672/e9_wutmvm.jpg",
+    alt: "Team photo at Annual Finance Summit",
+    category: "Events",
+  },
+  // {
+  //   src: "https://i.ibb.co/NPcwCLL/20250124-164246.jpg",
+  //   alt: "Team photo at Annual Finance Summit",
+  //   category: "Events",
+  // },
+  // {
+  //   src: "https://i.ibb.co/NPcwCLL/20250124-164246.jpg",
+  //   alt: "Team photo at Annual Finance Summit",
+  //   category: "Events",
+  // },
+
 ]
 
 export default function GalleryCarousel() {

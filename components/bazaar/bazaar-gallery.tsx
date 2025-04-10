@@ -10,37 +10,37 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "/images/bazaar-1.jpg",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311283/IMG_7269_1_qvjdkf.jpg",
     alt: "Students participating in trading simulation",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/bazaar-2.jpg",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311282/IMG_7326_2_ztjfup.jpg",
     alt: "Workshop session by industry expert",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/bazaar-3.jpg",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311281/20241019_165047_oprcpv.jpg",
     alt: "Prize distribution ceremony",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/bazaar-4.jpg",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311281/IMG_6741_1_gy1q22.jpg",
     alt: "Networking session",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/bazaar-5.jpg",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311281/IMG_7268_1_cjycms.jpg",
     alt: "Trading floor overview",
     width: 600,
     height: 400,
   },
   {
-    src: "/images/bazaar-6.jpg",
+    src: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744311282/IMG_7256_1_ha1bgw.jpg",
     alt: "Team competition",
     width: 600,
     height: 400,
