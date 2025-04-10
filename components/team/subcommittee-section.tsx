@@ -286,25 +286,25 @@ const subcommitteeMembers = {
   "Graphic Design": [
     {
       name: "Drashti Master",
-      position: "Equity Research Analyst",
+      
       image: Drashti,
       flip: false,
     },
     {
       name: "Gaurika Soni",
-      position: "Fixed Income Analyst",
+      
       image: Gaurika,
       flip: false,
     },
     {
       name: "Paril Paladiya",
-      position: "Macroeconomic Analyst",
+      
       image: Paril,
       flip: false,
     },
     {
       name: "Ishaan Katariya",
-      position: "Cryptocurrency Researcher",
+      
       image: Ishaan,
       flip: false,
     },
