@@ -8,16 +8,16 @@ import { Button } from "@/components/ui/button"
 import market_un from "@/public/events/Bulls& Bears.jpg"
 
 const upcomingEvents = [
-  {
-    title: "Market Unlocked",
-    date: "April 02, 2025",
-    time: "4:00 PM - 6:00 PM",
-    location: "TBA",
-    description: "Learn the basics of personal finance, budgeting, and investment strategies for college students.",
-    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744223443/hxyhgmzgernbedlrq2d3.jpg",
-    capacity: "100 seats",
-    registrationOpen: false,
-  },
+  // {
+  //   title: "Market Unlocked",
+  //   date: "April 02, 2025",
+  //   time: "4:00 PM - 6:00 PM",
+  //   location: "TBA",
+  //   description: "Learn the basics of personal finance, budgeting, and investment strategies for college students.",
+  //   image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744223443/hxyhgmzgernbedlrq2d3.jpg",
+  //   capacity: "100 seats",
+  //   registrationOpen: false,
+  // },
   // {
   //   title: "Stock Market Simulation Competition",
   //   date: "June 5-25, 2024",

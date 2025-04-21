@@ -4,12 +4,30 @@ import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Calendar, Users } from "lucide-react"
 
-import hisabkitab from "@/public/events/Hisaab_Kitaab.png"
-import pdyb from "@/public/events/Paisa double ya bubble.png"
-import cc from "@/public/events/Crisis Compass Poster.png"
+type Event = {
+  title: string;
+  date: string;
+  time?: string;
+  location?: string;
+  description: string;
+  image: string | { src: string };
+  capacity?: string;
+  registrationOpen?: boolean;
+  attendees?: string;
+  highlights?: string[];
+};
 
-
-const pastEvents = [
+const pastEvents: Event[] = [
+  {
+    title: "Market Unlocked",
+    date: "April 02, 2025",
+    time: "4:00 PM - 6:00 PM",
+    location: "TBA",
+    description: "Learn the basics of personal finance, budgeting, and investment strategies for college students.",
+    image: "https://res.cloudinary.com/dsvgwq2ab/image/upload/v1744223443/hxyhgmzgernbedlrq2d3.jpg",
+    capacity: "100 seats",
+    registrationOpen: false,
+  },
   {
     title: "Hisaab Kitaab",
     date: "March 22, 2025",
@@ -36,7 +54,7 @@ const pastEvents = [
     attendees: "60+",
     highlights: [ "Real-time market data", "Expert mentoring", "protection of assets", "strategic decision making"],
   },
-]
+];
 
 export default function PastEventsSection() {
   const [ref, inView] = useInView({
@@ -68,23 +86,26 @@ export default function PastEventsSection() {
               transition={{ duration: 0.7, delay: index * 0.2 }}
               className="grid items-center gap-8 md:grid-cols-2"
             >
-              <div className={`order-${index % 2 === 0 ? 1 : 2} md:order-${index % 2 === 0 ? 1 : 2}`}>
+              {/* Image container - full poster but smaller */}
+              <div className={`${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
-                  className="overflow-hidden rounded-xl shadow-lg"
+                  className="overflow-hidden rounded-xl shadow-lg w-full max-w-[400px] mx-auto"
                   whileHover={{ scale: 1.03 }}
                 >
                   <img
                     src={typeof event.image === "string" ? event.image : event.image?.src || "/placeholder.svg"}
                     alt={event.title}
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    className="w-full h-auto object-contain"
+                    style={{ aspectRatio: '3/4' }}
                   />
                 </motion.div>
               </div>
 
-              <div className={`order-${index % 2 === 0 ? 2 : 1} md:order-${index % 2 === 0 ? 2 : 1}`}>
+              {/* Content container */}
+              <div className={`${index % 2 === 0 ? 'order-2' : 'order-1'}`}>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={inView ? { opacity: 1 } : { opacity: 0 }}
@@ -92,29 +113,45 @@ export default function PastEventsSection() {
                   className="space-y-4"
                 >
                   <h3 className="text-2xl font-bold">{event.title}</h3>
-                  <div className="flex items-center gap-4 text-muted-foreground">
+                  <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4 text-primary" />
                       <span>{event.date}</span>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Users className="h-4 w-4 text-primary" />
-                      <span>{event.attendees} attendees</span>
-                    </div>
+                    {event.time && (
+                      <div className="flex items-center gap-1">
+                        <span className="h-4 w-4 text-primary">⏱️</span>
+                        <span>{event.time}</span>
+                      </div>
+                    )}
+                    {event.attendees && (
+                      <div className="flex items-center gap-1">
+                        <Users className="h-4 w-4 text-primary" />
+                        <span>{event.attendees} attendees</span>
+                      </div>
+                    )}
+                    {event.location && (
+                      <div className="flex items-center gap-1">
+                        <span className="h-4 w-4 text-primary">📍</span>
+                        <span>{event.location}</span>
+                      </div>
+                    )}
                   </div>
                   <p className="text-foreground/80">{event.description}</p>
 
-                  <div className="pt-2">
-                    <h4 className="text-sm font-semibold text-primary mb-2">Event Highlights:</h4>
-                    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                      {event.highlights.map((highlight, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm">
-                          <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
-                          <span className="text-muted-foreground">{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  {event.highlights && (
+                    <div className="pt-2">
+                      <h4 className="text-sm font-semibold text-primary mb-2">Event Highlights:</h4>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {event.highlights.map((highlight, i) => (
+                          <li key={i} className="flex items-center gap-2 text-sm">
+                            <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                            <span className="text-muted-foreground">{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </motion.div>
               </div>
             </motion.div>
@@ -124,4 +161,3 @@ export default function PastEventsSection() {
     </section>
   )
 }
-
