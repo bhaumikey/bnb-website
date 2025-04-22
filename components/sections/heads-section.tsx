@@ -93,9 +93,9 @@ const departmentHeads = [
   },
   {
     name: "Deep Singhala",
-    position: "Head of Sponsorships",
+    position: "Head of Sponsorship",
     image: DeepSinghala,
-    bio: "Sponsorships are strategic investments, not just financial contributions. He builds valuable partnerships by aligning business interests with financial incentives. His expertise lies in structuring deals that provide mutual benefits, securing long-term collaborations that contribute to both market presence and economic stability for all parties involved.",
+    bio: " are strategic investments, not just financial contributions. He builds valuable partnerships by aligning business interests with financial incentives. His expertise lies in structuring deals that provide mutual benefits, securing long-term collaborations that contribute to both market presence and economic stability for all parties involved.",
     //instagram: "https:////instagram.com",
   },
 ]

@@ -21,7 +21,7 @@ const coreMembers = [
   },
   {
     name: "Ashi Lalwala",
-    position: "vice President",
+    position: "Vice President",
     image: AashiLalwala,
     bio: "Every financial decision is a calculated move in a long-term game. Her expertise lies in strategic financial planning, ensuring that short-term noise never overshadows sustainable growth. She focuses on adaptability, innovation, and resilience, using data-driven insights to craft robust investment approaches that withstand economic cycles.",
     linkedin: "https://www.linkedin.com/in/ashi-lalwala-657999297/",
